@@ -2,9 +2,9 @@
 
   ## Cloning the Project
   1. Clone the project dev repo:
-	  `git clone https://github.com/mhshakouri/functionland.github.io.git`
+	  `git clone https://github.com/functionland/fx.land.git`
 	  OR
-	  `gh repo clone mhshakouri/functionland.github.io`
+	  `gh repo clone functionland/fx.land`
 2. Switch to dev branch:
 	`git switch dev`
 3. Running the project:
