@@ -1,7 +1,7 @@
 <script>
 	import Headline from '$lib/components/headline/index.svelte';
 	import FadeIn from '$lib/components/FadeIn.svelte';
-	import { innerWidth,  } from 'svelte-window-stores/viewport';
+	import { innerWidth } from 'svelte-window-stores/viewport';
 	import { inview } from 'svelte-inview';
 	const section = {
 		inview: false,
@@ -10,28 +10,30 @@
 			unobserveOnEnter: false
 		},
 		scrollDirection: '',
-		change:({ detail }) => {
+		change: ({ detail }) => {
 			section.inview = detail.inView;
 			section.scrollDirection = detail.scrollDirection.vertical;
-		},
-	}
+		}
+	};
 	export let data;
 	export let title;
 	export let presection;
-	let sectionClass, wrapperClass = 'grid wrapper';
+	let sectionClass,
+		wrapperClass = 'grid wrapper';
 	if (typeof title != 'undefined' && $innerWidth > 960) {
 		wrapperClass += ' has-headline';
 		sectionClass = 'has-headline';
 	}
-	if (typeof presection != 'undefined' ) {
+	if (typeof presection != 'undefined') {
 		wrapperClass += ' has-pre-section';
 		sectionClass = 'has-pre-section';
 	}
 </script>
+
 <svelte:head>
 	{#if section.inview}
 		{#if typeof presection != 'undefined'}
-			<link rel="preload" as="image" href={presection.image.src} type="{presection.image.type}">
+			<link rel="preload" as="image" href={presection.image.src} type={presection.image.type} />
 		{/if}
 	{/if}
 </svelte:head>
@@ -42,7 +44,7 @@
 				<h3>{@html title}</h3>
 			{/if}
 			{#if typeof presection != 'undefined'}
-				<div class="pre-section" >
+				<div class="pre-section">
 					{#if presection.title.length > 0}
 						<h3>
 							<FadeIn inview={section}>
@@ -59,7 +61,7 @@
 					{/if}
 					{#if presection.image.src.length > 0}
 						<FadeIn inview={section}>
-							<img src={presection.image.src} alt="" type="{presection.image.type}" loading="lazy">
+							<img src={presection.image.src} alt="" type={presection.image.type} loading="lazy" />
 						</FadeIn>
 					{/if}
 				</div>
@@ -67,7 +69,7 @@
 			{#each data as item, index}
 				{#if item.show == true}
 					<Headline {item} titled={title != undefined ? true : false} {index} />
-					{/if}
+				{/if}
 			{/each}
 		</div>
 	</div>
@@ -91,7 +93,7 @@
 		text-align: center;
 		display: grid;
 		row-gap: 1rem;
-		grid-template-rows: minmax(20vh,1fr) auto;
+		grid-template-rows: minmax(20vh, 1fr) auto;
 		align-items: center;
 	}
 	.grid.has-pre-section h3 {
@@ -105,7 +107,8 @@
 			gap: var(--headlines-grid-gap);
 			grid-template-columns: 1fr 1fr 1fr;
 		}
-		.grid.has-pre-section,.grid.has-headline {
+		.grid.has-pre-section,
+		.grid.has-headline {
 			gap: var(--headlines-grid-gap);
 			padding: 0;
 			min-height: var(--section-min-height);

@@ -20,43 +20,38 @@
 				{
 					name: 'Keyvan Sadeghi',
 					position: 'CEO',
-					image: assets + 'images/team/keyvan-sadeghi.png',
+					image: assets + 'images/team/Keyvan-Sadeghi.jpg',
 					artwork: assets + 'images/team/keyvan-sadeghi-artwork.jpg'
 				},
 				{
 					name: 'Kate Writhers',
 					position: 'Partnerships',
-					image: assets + 'images/team/kate-writhers.png',
+					image: assets + 'images/team/Kate-Withers.jpg',
 					artwork: assets + 'images/team/kate-writhers-artwork.jpg'
 				},
 				{
 					name: 'Ehsan Shariati',
 					position: 'CTO',
-					image: assets + 'images/team/ehsan-shariati.jpg',
+					image: assets + 'images/team/Ehsan-Shariati.jpg',
 					artwork: assets + 'images/team/ehsan-shariati-artwork.jpg'
 				},
-				{
-					name: 'Ehsan Emami',
-					position: 'Hardware',
-					image: assets + 'images/team/ehsan-emami.png',
-					artwork: assets + 'images/team/ehsan-emami-artwork.jpg'
-				},
+
 				{
 					name: 'Arman Shirani',
 					position: 'Marketing',
-					image: assets + 'images/team/arman-shirani.jpg',
+					image: assets + 'images/team/Arman-Shirani.jpg',
 					artwork: assets + 'images/team/arman-shirani-artwork.jpg'
 				},
 				{
 					name: 'Erfan Shekarchi',
 					position: 'Tokenomics',
-					image: assets + 'images/team/erfan-shekarchi.png',
+					image: assets + 'images/team/Erfan-Shekarchi.jpg',
 					artwork: assets + 'images/team/erfan-shekarchi-artwork.jpg'
 				},
 				{
 					name: 'Sheida Shahbaz',
 					position: 'Art & NFT',
-					image: assets + 'images/team/sheida-shahbaz.png',
+					image: assets + 'images/team/Sheida-Shahbaz.jpg',
 					artwork: assets + 'images/team/sheida-shahbaz-artwork.jpg'
 				},
 				{
@@ -68,8 +63,57 @@
 				{
 					name: 'Jonathan Groeneveld',
 					position: 'Hardware',
-					image: assets + 'images/team/jonathan-groeneveld.png',
+					image: assets + 'images/team/Jonathan-Groeneveld.jpg',
 					artwork: assets + 'images/team/jonathan-groeneveld-artwork.jpg'
+				},
+				{
+					name: 'Ehsan Emami',
+					position: 'Hardware',
+					image: assets + 'images/team/ehsan-emami.png',
+					artwork: assets + 'images/team/ehsan-emami-artwork.jpg'
+				},
+				{
+					name: 'Aaron-Surty',
+					position: 'Software',
+					image: assets + 'images/team/Erfan-Shekarchi.jpg',
+					artwork: assets + 'images/team/erfan-shekarchi-artwork.jpg'
+				},
+				{
+					name: 'Jamshid Saidov',
+					position: 'Software',
+					image: assets + 'images/team/Jamshid-Saidov.jpg',
+					artwork: assets + 'images/team/jamshid-saidov-artwork.jpg'
+				},
+				{
+					name: 'Aaron',
+					position: 'Not Found',
+					image: assets + 'images/team/Aaron.jpg',
+					artwork: assets + 'images/team/erfan-shekarchi-artwork.jpg'
+				},
+				{
+					name: 'Alain Fundi',
+					position: 'Growth',
+					image: assets + 'images/team/Alain-Fundi.jpg',
+					artwork: assets + 'images/team/alain-fundi-artwork.jpg'
+				},
+				{
+					name: 'Andy',
+					position: 'Not Found',
+					image: assets + 'images/team/Andy.jpg',
+					artwork: assets + 'images/team/andy-artwork.jpg'
+				},
+
+				{
+					name: 'Kevin',
+					position: 'Not Found',
+					image: assets + 'images/team/Kevin.jpg',
+					artwork: assets + 'images/team/kevin.jpg'
+				},
+				{
+					name: 'Moein Bakhshi',
+					position: 'Research',
+					image: assets + 'images/team/Moein-Bakhshi.jpg',
+					artwork: assets + 'images/team/moein-bakhshi-artwork.jpg'
 				}
 			]
 		},
@@ -80,25 +124,31 @@
 				{
 					name: 'Crhis Gale',
 					position: 'Founder | ViewWorks',
-					image: assets + 'images/advisors/crhis-gale.png',
+					image: assets + 'images/advisors/Advisor-Crhis-Gale.jpg',
 					artwork: assets + 'images/advisors/crhis-gale-artwork.jpg'
 				},
 				{
 					name: 'Zac Cohen',
 					position: 'Founder | FileBase',
-					image: assets + 'images/advisors/zac-cohen.png',
+					image: assets + 'images/advisors/Advisor-Zac-Cohen.jpg',
 					artwork: assets + 'images/advisors/zac-cohen-artwork.jpg'
 				},
 				{
 					name: 'Shaun Neff',
 					position: 'Founder | Neff Headwear',
-					image: assets + 'images/advisors/shaun-neff.jpg',
+					image: assets + 'images/advisors/Advisor-Shaun-Neff.jpg',
 					artwork: assets + 'images/advisors/shaun-neff-artwork.jpg'
 				},
 				{
 					name: 'Andy Lark',
 					position: 'CEO | Group Lark',
-					image: assets + 'images/advisors/andy-lark.png',
+					image: assets + 'images/advisors/Advisor-Andy-Lark.jpg',
+					artwork: assets + 'images/advisors/andy-lark-artwork.jpg'
+				},
+				{
+					name: 'Stefaan Vervaet',
+					position: 'Ecosystem Lead | Protocol Labs',
+					image: assets + 'images/advisors/Advisor-Stefaan-Vervaet.jpg',
 					artwork: assets + 'images/advisors/andy-lark-artwork.jpg'
 				}
 			]
