@@ -32,7 +32,7 @@
 				class:animateFromBottom={animated.scrollDirection === 'down'}
 				class:animateFromTop={animated.scrollDirection !== 'down'}
 			>
-				<!--<img
+				/*<img
 					src={image.photo.srcset.small.src}
 					alt=""
 					class={`${
@@ -46,7 +46,7 @@
 					height={image.photo.srcset[image.size].height}
 					loading="lazy"
 					decoding="async"
-				/>-->
+				/>*/
 				<video
 						src={image.photo.srcset.large.src}
 						class={image.ref}
