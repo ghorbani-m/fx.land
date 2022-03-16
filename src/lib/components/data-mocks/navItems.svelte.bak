@@ -33,7 +33,7 @@
 			}
 		],
 		cta: {
-			path: '#preordercta',
+			path: '/crowdfunding',
 			text: 'Pre-Order',
 			type: 'scroll',
 			refrence: 'preorder'

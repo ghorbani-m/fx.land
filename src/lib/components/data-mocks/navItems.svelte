@@ -20,20 +20,20 @@
 				internal: true
 			},
 			{
-				path: 'https://old.fx.land/nft/',
+				path: 'https://fx.land/nft/',
 				text: 'NFT',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: 'https://old.fx.land/mine/',
+				path: 'https://fx.land/mine/',
 				text: 'FULA Protocol',
 				type: 'link',
 				internal: false
 			}
 		],
 		cta: {
-			path: '/crowdfunding',
+			path: 'https://fx.land/nft/',
 			text: 'Pre-Order',
 			type: 'scroll',
 			refrence: 'preorder'
@@ -42,19 +42,19 @@
 	export const copyright_nav = {
 		list: [
 			{
-				path: '/privacy',
+				path: '/#privacy',
 				text: 'Privacy Policy',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: '/terms',
+				path: '/#terms',
 				text: 'Terms and Conditions',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: '/referral-guidelines',
+				path: '/#referral-guidelines',
 				text: 'Referral Guidelines',
 				type: 'link',
 				internal: false
@@ -71,13 +71,13 @@
 				internal: true
 			},
 			{
-				path: '/contact',
+				path: '/#contact',
 				text: 'Contact Us',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: 'https://old.fx.land/nft/',
+				path: 'https://fx.land/nft/',
 				text: 'NFT',
 				type: 'link',
 				internal: false
@@ -88,19 +88,19 @@
 		title: 'Get Help',
 		items: [
 			{
-				path: '/faq',
+				path: '/#faq',
 				text: 'Frequently Asked Questions',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: '/support',
+				path: '/#support',
 				text: 'Support',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: '/wishlist',
+				path: '/#wishlist',
 				text: 'Wishlist',
 				type: 'link',
 				internal: false
@@ -111,19 +111,19 @@
 		title: 'Resources',
 		items: [
 			{
-				path: '/whitepaper',
+				path: 'https://bit.ly/FulaWP',
 				text: 'Whitepaper',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: '/branding-guidelines',
+				path: 'https://drive.google.com/file/d/1FGbvyUQqTdjWYml95V3DVooUjo6w7xFe/view?usp=sharing',
 				text: 'Branding Guidelines',
 				type: 'link',
 				internal: false
 			},
 			{
-				path: 'https://old.fx.land/mine/',
+				path: 'https://fx.land/mine/',
 				text: 'FULA Protocol',
 				type: 'link',
 				internal: false
