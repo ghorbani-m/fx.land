@@ -8,9 +8,11 @@
 			type: 'value',
 			ref: 'own-your-data',
 			intro_title: 'Own Your Data',
-			intro_desc: 'Box is built from the ground up. It was designed to put the power back into YOUR hands. Your data is your property, and yours alone. Your photos, files, and data are fully encrypted. Nobody else has a key.',
+			intro_desc:
+				'Box is built from the ground up. It was designed to put the power back into YOUR hands. Your data is your property, and yours alone. Your photos, files, and data are fully encrypted. Nobody else has a key.',
 			main_title: 'Own Your Data',
-			main_desc: 'Get a peace of mind with Box. Our proprietary AES-256 encryption software hacker-proofs your data. Even if the world’s most talented hacker were able to bring the power of all world’s computers to bear on your Box,  it would still take (literally!) billions of years to break into your files. Only you can access your data. Only you can share it.',
+			main_desc:
+				'Get a peace of mind with Box. Our proprietary AES-256 encryption software hacker-proofs your data. Even if the world’s most talented hacker were able to bring the power of all world’s computers to bear on your Box,  it would still take (literally!) billions of years to break into your files. Only you can access your data. Only you can share it.',
 			show_cta: true,
 			cta_text: 'Learn more',
 			videos: [
@@ -34,9 +36,11 @@
 			type: 'value',
 			ref: 'apps-without-ads',
 			intro_title: 'Apps Without Ads or Subscription',
-			intro_desc: 'Box gives you private cloud storage. No ads. No tracking. No subscription fees. It is designed to be a self-sustainable ecosystem for both users and developers. <br> No kidding. ',
+			intro_desc:
+				'Box gives you private cloud storage. No ads. No tracking. No subscription fees. It is designed to be a self-sustainable ecosystem for both users and developers. <br> No kidding. ',
 			main_title: 'Start with Box Photos! ',
-			main_desc: 'Our app Photos - recognized by GitHub as in the top 3% of open-source apps worldwide - is a polished, forever-free application that works seamlessly on any device. It provides fast, easy access and sharing from anywhere, across any device.',
+			main_desc:
+				'Our app Photos - recognized by GitHub as in the top 3% of open-source apps worldwide - is a polished, forever-free application that works seamlessly on any device. It provides fast, easy access and sharing from anywhere, across any device.',
 			show_cta: true,
 			cta_text: 'Learn more',
 			videos: [],
@@ -44,12 +48,12 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-1-small.jpg',
+							src: assets + 'videos/bgloop/1.mp4',
 							width: 247,
 							height: 192
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-1-large.jpg',
+							src: assets + 'videos/bgloop/1.mp4',
 							width: 329,
 							height: 495
 						}
@@ -59,12 +63,12 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-2-small.jpg',
+							src: assets + 'videos/bgloop/2.mp4',
 							width: 360,
 							height: 279
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-2-large.jpg',
+							src: assets + 'videos/bgloop/2.mp4',
 							width: 850,
 							height: 563
 						}
@@ -74,12 +78,12 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-3-small.jpg',
+							src: assets + 'videos/bgloop/3.mp4',
 							width: 139,
 							height: 293
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-3-large.jpg',
+							src: assets + 'videos/bgloop/3.mp4',
 							width: 581,
 							height: 388
 						}
@@ -89,12 +93,12 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-4-small.jpg',
+							src: assets + 'videos/bgloop/4.mp4',
 							width: 180,
 							height: 245
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-4-large.jpg',
+							src: assets + 'videos/bgloop/4.mp4',
 							width: 692,
 							height: 463
 						}
@@ -104,12 +108,12 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
+							src: assets + 'videos/bgloop/5.mp4',
 							width: 265,
 							height: 229
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
+							src: assets + 'videos/bgloop/5.mp4',
 							width: 325,
 							height: 591
 						}
@@ -123,9 +127,11 @@
 			type: 'value',
 			ref: 'earn-crypto',
 			intro_title: 'Earn Crypto',
-			intro_desc: 'Box quietly earns tokens by providing backups and resources to others on the network. When you make backups, take advantage of cloud services or use apps,  Box compensates the open-source developers, UX designers, and contributors who built them for you.',
+			intro_desc:
+				'Box quietly earns tokens by providing backups and resources to others on the network. When you make backups, take advantage of cloud services or use apps,  Box compensates the open-source developers, UX designers, and contributors who built them for you.',
 			main_title: 'Earn Crypto',
-			main_desc: 'Thanks to BAS, our Blockchain-Attached Storage solution, Box lets you share storage and CPU power with others while quietly mining FULA tokens in the background.',
+			main_desc:
+				'Thanks to BAS, our Blockchain-Attached Storage solution, Box lets you share storage and CPU power with others while quietly mining FULA tokens in the background.',
 			show_cta: true,
 			cta_text: 'Learn more',
 			videos: [

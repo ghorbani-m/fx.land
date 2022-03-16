@@ -1,48 +1,49 @@
 <script>
-    export let data;
-    export let innerWidth;
+	export let data;
+	export let innerWidth;
 </script>
+
 <div class="wrapper grid">
-    {#each data.photos as photo}
-        {#if innerWidth < 960}
-            <!-- <div class="image-box" style={`aspect-ratio: ${photo.srcset.small.width}/${photo.srcset.small.height}; width: ${(photo.srcset.small.width / 390) * 100}%`}> -->
-            <div
-                class="image-box"
-                style={`aspect-ratio: ${photo.srcset.small.width}/${photo.srcset.small.height};`}
-            >
-                <img
-                    src={photo.srcset.small.src}
-                    alt=""
-                    width={photo.srcset.small.width}
-                    height={photo.srcset.small.height}
-                    loading="lazy"
-                    decoding="async"
-                />
-            </div>
-        {:else}
-            <div
-                class={`image-box ${data.ref}`}
-                style={`aspect-ratio: ${photo.srcset.large.width}/${
-                    photo.srcset.large.height
-                }; width: ${(photo.srcset.large.width / 1530) * 100}%`}
-            >
-                <!-- <div class={`image-box ${data.ref}`} style={`aspect-ratio: ${photo.srcset.large.width}/${photo.srcset.large.height};`} > -->
-                <img
-                    src={photo.srcset.large.src}
-                    alt=""
-                    class={data.ref}
-                    width={photo.srcset.large.width}
-                    height={photo.srcset.large.height}
-                    loading="lazy"
-                    decoding="async"
-                />
-            </div>
-        {/if}
-    {/each}
+	{#each data.photos as photo}
+		{#if innerWidth < 960}
+			<!-- <div class="image-box" style={`aspect-ratio: ${photo.srcset.small.width}/${photo.srcset.small.height}; width: ${(photo.srcset.small.width / 390) * 100}%`}> -->
+			<div
+				class="image-box"
+				style={`aspect-ratio: ${photo.srcset.small.width}/${photo.srcset.small.height};`}
+			>
+				<img
+					src={photo.srcset.small.src}
+					alt=""
+					width={photo.srcset.small.width}
+					height={photo.srcset.small.height}
+					loading="lazy"
+					decoding="async"
+				/>
+			</div>
+		{:else}
+			<div
+				class={`image-box ${data.ref}`}
+				style={`aspect-ratio: ${photo.srcset.large.width}/${photo.srcset.large.height}; width: ${
+					(photo.srcset.large.width / 1530) * 100
+				}%`}
+			>
+				<!-- <div class={`image-box ${data.ref}`} style={`aspect-ratio: ${photo.srcset.large.width}/${photo.srcset.large.height};`} > -->
+				<img
+					src={photo.srcset.large.src}
+					alt=""
+					class={data.ref}
+					width={photo.srcset.large.width}
+					height={photo.srcset.large.height}
+					loading="lazy"
+					decoding="async"
+					style="object-fit: cover"
+				/>
+			</div>
+		{/if}
+	{/each}
 </div>
 
 <style>
-
 	.grid {
 		display: grid;
 		grid-auto-flow: row;

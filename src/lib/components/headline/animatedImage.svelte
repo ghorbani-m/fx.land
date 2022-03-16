@@ -1,7 +1,7 @@
 <script>
 	import { inview } from 'svelte-inview';
-    export let image;
-    $: ratio = image.size === 'small' ? 390 : 1530;
+	export let image;
+	$: ratio = image.size === 'small' ? 390 : 1530;
 	const animated = {
 		inview: false,
 		options: {
@@ -9,30 +9,38 @@
 			unobserveOnEnter: false
 		},
 		scrollDirection: '',
-		change:({ detail }) => {
+		change: ({ detail }) => {
 			animated.inview = detail.inView;
 			animated.scrollDirection = detail.scrollDirection.vertical;
-		},
-	}
+		}
+	};
 </script>
 
 {#if image.size == 'small'}
-    <div use:inview={animated.options} on:change={animated.change}
-        class={`image-box ${image.ref}`}
-        style={`aspect-ratio: ${image.photo.srcset.small.width}/${
-            image.photo.srcset.small.height
-        }; width: ${(image.photo.srcset.small.width / 390) * 100}%`}
-    >
+	<div
+		use:inview={animated.options}
+		on:change={animated.change}
+		class={`image-box ${image.ref}`}
+		style={`aspect-ratio: ${image.photo.srcset.small.width}/${
+			image.photo.srcset.small.height
+		}; width: ${(image.photo.srcset.small.width / 390) * 100}%`}
+	>
 		<div class="image-transformer">
-			<div class="image-wrapper"
+			<div
+				class="image-wrapper"
 				class:animate={animated.inview}
 				class:animateFromBottom={animated.scrollDirection === 'down'}
-				class:animateFromTop={animated.scrollDirection !== 'down'}>
+				class:animateFromTop={animated.scrollDirection !== 'down'}
+			>
 				<img
 					src={image.photo.srcset.small.src}
 					alt=""
 					class={`${
-						image.ref != 'plug-n-play' ? image.position % 2 == 0 ? 'vibrate-1-3s' : 'vibrate-1-6s' : ''
+						image.ref != 'plug-n-play'
+							? image.position % 2 == 0
+								? 'vibrate-1-3s'
+								: 'vibrate-1-6s'
+							: ''
 					} ${image.ref}`}
 					width={image.photo.srcset[image.size].width}
 					height={image.photo.srcset[image.size].height}
@@ -41,25 +49,32 @@
 				/>
 			</div>
 		</div>
-    </div>
+	</div>
 {:else}
-
-    <div use:inview={animated.options} on:change={animated.change}
-        class={`image-box ${image.ref}`}
-        style={`aspect-ratio: ${image.photo.srcset.large.width}/${
-            image.photo.srcset.large.height
-        }; width: ${(image.photo.srcset.large.width / 1530) * 100}%`}>
-		
+	<div
+		use:inview={animated.options}
+		on:change={animated.change}
+		class={`image-box ${image.ref}`}
+		style={`aspect-ratio: ${image.photo.srcset.large.width}/${
+			image.photo.srcset.large.height
+		}; width: ${(image.photo.srcset.large.width / 1530) * 100}%`}
+	>
 		{#if image.ref == 'apps-without-ads'}
-			<div class="image-transformer"
-				data-range={`${parseInt(image.photo.srcset.large.width/20)},${parseInt(image.photo.srcset.large.height/20)}`}
-				class:transforminview={animated.inview}>
-				<div class="image-wrapper"
+			<div
+				class="image-transformer"
+				data-range={`${parseInt(image.photo.srcset.large.width / 20)},${parseInt(
+					image.photo.srcset.large.height / 20
+				)}`}
+				class:transforminview={animated.inview}
+			>
+				<div
+					class="image-wrapper video-mask"
 					class:animate={animated.inview}
 					class:animateFromBottom={animated.scrollDirection === 'down'}
 					class:animateFromTop={animated.scrollDirection !== 'down'}
-					style="transition-delay:{`${image.position%2 === 0 ? '0.6s' : '0.7s'}`}">
-					<img
+					style="transition-delay:{`${image.position % 2 === 0 ? '0.6s' : '0.7s'}`}"
+				>
+					<!-- <img
 						src={image.photo.srcset.large.src}
 						alt=""
 						class={image.ref}
@@ -67,15 +82,28 @@
 						height={image.photo.srcset.large.height}
 						loading="lazy"
 						decoding="async"
-					/>
+					/> -->
+					<video
+						src={image.photo.srcset.large.src}
+						class={image.ref}
+						width={image.photo.srcset.large.width}
+						type="video/mp4"
+						autoplay="true"
+						loop
+						muted
+					>
+						<track default kind="captions" />
+					</video>
 				</div>
 			</div>
 		{:else}
-			<div class="image-wrapper"
+			<div
+				class="image-wrapper"
 				class:animate={animated.inview}
 				class:animateFromBottom={animated.scrollDirection === 'down'}
 				class:animateFromTop={animated.scrollDirection !== 'down'}
-				style="transition-delay:{`${image.position%2 === 0 ? '0.6s' : '0.7s'}`}">
+				style="transition-delay:{`${image.position % 2 === 0 ? '0.6s' : '0.7s'}`}"
+			>
 				<img
 					src={image.photo.srcset.large.src}
 					alt=""
@@ -87,10 +115,11 @@
 				/>
 			</div>
 		{/if}
-    </div>
+	</div>
 {/if}
+
 <style>
-    .image-wrapper {
+	.image-wrapper {
 		/* background: #e5e5e5; */
 		transform: scale(0);
 		width: 100%;
@@ -98,17 +127,17 @@
 		-webkit-transform: scale(0);
 		transform: scale(0);
 		will-change: transform;
-		transition: -webkit-transform .7s;
-		transition: transform .7s;
-		transition: transform .7s, -webkit-transform .7s;
+		transition: -webkit-transform 0.7s;
+		transition: transform 0.7s;
+		transition: transform 0.7s, -webkit-transform 0.7s;
 		/* transition-delay: 0.7s; */
 		overflow: hidden;
 	}
 	.image-transformer {
 		will-change: transform;
-		transition: -webkit-transform .8s;
-		transition: transform .8s;
-		transition: transform .8s, -webkit-transform .8s;
+		transition: -webkit-transform 0.8s;
+		transition: transform 0.8s;
+		transition: transform 0.8s, -webkit-transform 0.8s;
 		/* transition-delay: 0.7s; */
 	}
 	.image-wrapper.animateFromTop {
@@ -121,9 +150,10 @@
 		transform: scale(0);
 	}
 	.image-wrapper.animate {
-		transition: -webkit-transform .7s, opacity .4s;
-		transition: transform .7s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity .4s;
-		transition: transform .7s cubic-bezier(0.49, 0.45, 0.47, 1.24), -webkit-transform .7s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity .4s;
+		transition: -webkit-transform 0.7s, opacity 0.4s;
+		transition: transform 0.7s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity 0.4s;
+		transition: transform 0.7s cubic-bezier(0.49, 0.45, 0.47, 1.24),
+			-webkit-transform 0.7s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity 0.4s;
 		opacity: 1;
 		-webkit-transform: scale(1);
 		transform: scale(1);
@@ -136,6 +166,7 @@
 		width: 100%;
 		border-radius: 20px;
 		display: block;
+		object-fit: cover;
 	}
 	div.image-box:nth-child(1) {
 		position: absolute;
@@ -167,7 +198,7 @@
 		left: 15.6%;
 		z-index: 0;
 	}
-    
+
 	@media (min-width: 960px) {
 		div.image-box.design,
 		div.image-box.design:nth-child(1),
@@ -222,7 +253,7 @@
 			top: unset;
 			z-index: 0;
 		}
-        
+
 		div.image-box.design:nth-child(n),
 		div.image-box.design:nth-child(n) img {
 			aspect-ratio: unset !important;
@@ -285,5 +316,5 @@
 		div.image-box.design:nth-child(8) .image-wrapper {
 			animation-delay: 0.2s;
 		}
-    }
+	}
 </style>
