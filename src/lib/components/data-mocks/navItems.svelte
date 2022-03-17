@@ -156,7 +156,7 @@
 			height: '28px'
 		},
 		{
-			url: 'https://www.instagram.com/functionland',
+			url: 'https://www.instagram.com/functionland.official',
 			name: 'Instagram',
 			width: '28px',
 			height: '28px'
