@@ -2,7 +2,7 @@
 	import { assets } from '$app/paths';
 	export const data = {
 		title:
-			'Box By Functionland. The first Blockchain-Attached Storage solution By the People, For the People.',
+			'By the People, For the People.',
 
 		desc: '',
 		image: {

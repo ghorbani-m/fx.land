@@ -31,7 +31,14 @@
 				if (video.paused) {
 					setTimeout(() => {
 						video.play();
-					}, 1200);
+						video.addEventListener('timeupdate', function () {
+						if (video.currentTime >= 6) {
+							video.currentTime = 5.5;
+							console.log('here');
+							video.play();
+						}
+						}, false);
+					}, 600);
 				}
 			}
 		},
@@ -81,7 +88,7 @@
 						{#if data.ref === 'customizable'}
 							<FadeIn inview={observer} delay={.3} inheritbg={true}>
 								<video playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}
-								on:timeupdate={scaleOnTime} bind:currentTime={custCurrentTime} bind:duration={custDuration} style="transition: transform 0.1s; transform: scale(1.4); transform-origin: bottom;">
+								on:timeupdate={scaleOnTime} bind:currentTime={custCurrentTime} bind:duration={custDuration} style="transition: transform 0.1s; transform: scale(2.4); transform-origin: bottom;">
 									<source src={video.src} type={video.type} />
 									{browserSupportText}
 								</video>

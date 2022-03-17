@@ -161,158 +161,115 @@
 		},
 		memories: {
 			title: 'Our Memories',
-			description: 'Access Your favorite apps without the need to pay!',
+			description: 'Functionland family from all over the world but close in heart!',
 			photos: [
+				
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-1-small.jpg',
-							width: 476,
-							height: 288
-						},
-						large: {
-							src: assets + 'images/photos-app/photos-1-large.jpg',
-							width: 476,
-							height: 288
-						}
-					},
-					type: 'image/jpg'
-				},
-				{
-					srcset: {
-						small: {
-							src: assets + 'images/photos-app/photos-2-small.jpg',
-							width: 449,
-							height: 288
-						},
-						large: {
-							src: assets + 'images/photos-app/photos-2-large.jpg',
-							width: 449,
-							height: 288
-						}
-					},
-					type: 'image/jpg'
-				},
-				{
-					srcset: {
-						small: {
-							src: assets + 'images/photos-app/photos-3-small.jpg',
-							width: 584,
-							height: 363
-						},
-						large: {
-							src: assets + 'images/photos-app/photos-3-large.jpg',
-							width: 584,
-							height: 363
-						}
-					},
-					type: 'image/jpg'
-				},
-				{
-					srcset: {
-						small: {
-							src: assets + 'images/photos-app/photos-4-small.jpg',
+							src: assets + 'images/photos-app/1-small.jpg',
 							width: 186,
 							height: 282
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-4-large.jpg',
+							src: assets + 'images/photos-app/1.jpg',
 							width: 186,
 							height: 282
-						}
+						},
 					},
 					type: 'image/jpg'
 				},
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
-							width: 494,
-							height: 279
+							src: assets + 'images/photos-app/2-small.jpg',
+							width: 584,
+							height: 363
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
-							width: 494,
-							height: 279
-						}
+							src: assets + 'images/photos-app/2.jpg',
+							width: 584,
+							height: 363
+						},
 					},
 					type: 'image/jpg'
 				},
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
+							src: assets + 'images/photos-app/4-small.jpg',
+							width: 449,
+							height: 288
+						},
+						large: {
+							src: assets + 'images/photos-app/4.jpg',
+							width: 449,
+							height: 288
+						},
+					},
+					type: 'image/jpg'
+				},
+				
+				{
+					srcset: {
+						small: {
+							src: assets + 'images/photos-app/5-small.jpg',
+							width: 476,
+							height: 288
+						},
+						large: {
+							src: assets + 'images/photos-app/5.jpg',
+							width: 476,
+							height: 288
+						},
+					},
+					type: 'image/jpg'
+				},
+				{
+					srcset: {
+						small: {
+							src: assets + 'images/photos-app/3-small.jpg',
 							width: 233,
 							height: 276
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
+							src: assets + 'images/photos-app/3.jpg',
 							width: 233,
 							height: 276
-						}
+						},
 					},
 					type: 'image/jpg'
 				},
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
+							src: assets + 'images/photos-app/6-small.jpg',
+							width: 494,
+							height: 279
+						},
+						large: {
+							src: assets + 'images/photos-app/6.jpg',
+							width: 494,
+							height: 279
+						},
+					},
+					type: 'image/jpg'
+				},
+				{
+					srcset: {
+						small: {
+							src: assets + 'images/photos-app/7-small.jpg',
 							width: 698,
 							height: 457
 						},
 						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
+							src: assets + 'images/photos-app/7.jpg',
 							width: 698,
 							height: 457
-						}
+						},
 					},
 					type: 'image/jpg'
 				},
-				{
-					srcset: {
-						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
-							width: 612,
-							height: 457
-						},
-						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
-							width: 612,
-							height: 457
-						}
-					},
-					type: 'image/jpg'
-				},
-				{
-					srcset: {
-						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
-							width: 449,
-							height: 431
-						},
-						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
-							width: 449,
-							height: 431
-						}
-					},
-					type: 'image/jpg'
-				},
-				{
-					srcset: {
-						small: {
-							src: assets + 'images/photos-app/photos-5-small.jpg',
-							width: 857,
-							height: 431
-						},
-						large: {
-							src: assets + 'images/photos-app/photos-5-large.jpg',
-							width: 857,
-							height: 431
-						}
-					},
-					type: 'image/jpg'
-				}
 			]
 		},
 		jobs: {
