@@ -81,7 +81,7 @@
 						{#if data.ref === 'customizable'}
 							<FadeIn inview={observer} delay={.3} inheritbg={true}>
 								<video playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}
-								on:timeupdate={scaleOnTime} bind:currentTime={custCurrentTime} bind:duration={custDuration} style="transition: transform 0.7s; transform: scale(2.4); transform-origin: bottom;">
+								on:timeupdate={scaleOnTime} bind:currentTime={custCurrentTime} bind:duration={custDuration} style="transition: transform 0.1s; transform: scale(1.4); transform-origin: bottom;">
 									<source src={video.src} type={video.type} />
 									{browserSupportText}
 								</video>
