@@ -15,148 +15,148 @@
 		},
 		team: {
 			title: 'Meet Our Team',
-			description: 'Pulvinar auctor nisl, volutpat turpis enim id. ',
+			description: 'A diverse skillset with proven track record',
 			list: [
 				{
 					name: 'Keyvan Sadeghi',
 					position: 'CEO',
 					image: assets + 'images/team/Keyvan-Sadeghi.jpg',
-					artwork: assets + 'images/team/keyvan-sadeghi-artwork.jpg'
+					artwork: assets + 'images/team/Keyvan-Sadeghi-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/keyvanmsadeghi/'
+				},
+				{
+					name: 'Ehsan Shariati',
+					position: 'CTO',
+					image: assets + 'images/team/Ehsan-shariati.jpg',
+					artwork: assets + 'images/team/Ehsan-shariati-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/ehsan6sha'
 				},
 				{
 					name: 'Kate Writhers',
 					position: 'Partnerships',
 					image: assets + 'images/team/Kate-Withers.jpg',
-					artwork: assets + 'images/team/kate-writhers-artwork.jpg'
+					artwork: assets + 'images/team/Kate-Withers-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/kate-withers-hess-phd-33530023/'
 				},
-				{
-					name: 'Ehsan Shariati',
-					position: 'CTO',
-					image: assets + 'images/team/Ehsan-Shariati.jpg',
-					artwork: assets + 'images/team/ehsan-shariati-artwork.jpg'
-				},
-
 				{
 					name: 'Arman Shirani',
-					position: 'Marketing',
-					image: assets + 'images/team/Arman-Shirani.jpg',
-					artwork: assets + 'images/team/arman-shirani-artwork.jpg'
+					position: 'CMO',
+					image: assets + 'images/team/Arman-shirani.jpg',
+					artwork: assets + 'images/team/Arman-shirani-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/armanshirani/'
 				},
 				{
 					name: 'Erfan Shekarchi',
 					position: 'Tokenomics',
 					image: assets + 'images/team/Erfan-Shekarchi.jpg',
-					artwork: assets + 'images/team/erfan-shekarchi-artwork.jpg'
+					artwork: assets + 'images/team/Erfan-Shekarchi-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/erfan-shekarchi/'
 				},
 				{
 					name: 'Sheida Shahbaz',
 					position: 'Art & NFT',
 					image: assets + 'images/team/Sheida-Shahbaz.jpg',
-					artwork: assets + 'images/team/sheida-shahbaz-artwork.jpg'
+					artwork: assets + 'images/team/Sheida-Shahbaz-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/shidow/'
 				},
 				{
 					name: 'Andrew Monaghan',
-					position: 'Growth',
-					image: assets + 'images/team/andrew-monaghan.jpg',
-					artwork: assets + 'images/team/andrew-monaghan-artwork.jpg'
+					position: 'Copywriter',
+					image: assets + 'images/team/Andrew-monaghan.jpg',
+					artwork: assets + 'images/team/Andrew-monaghan-artwork.png',
+					linkedin: '#'
 				},
 				{
 					name: 'Jonathan Groeneveld',
 					position: 'Hardware',
 					image: assets + 'images/team/Jonathan-Groeneveld.jpg',
-					artwork: assets + 'images/team/jonathan-groeneveld-artwork.jpg'
+					artwork: assets + 'images/team/Jonathan-Groeneveld-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/jonathan-groeneveld-4a8774b7/'
 				},
 				{
 					name: 'Ehsan Emami',
 					position: 'Hardware',
-					image: assets + 'images/team/ehsan-emami.png',
-					artwork: assets + 'images/team/ehsan-emami-artwork.jpg'
+					image: assets + 'images/team/Ehsan-emami.png',
+					artwork: assets + 'images/team/Ehsan-emami-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/ehsan-emami-0005bb6/'
 				},
 				{
 					name: 'Aaron-Surty',
 					position: 'Software',
-					image: assets + 'images/team/Erfan-Shekarchi.jpg',
-					artwork: assets + 'images/team/erfan-shekarchi-artwork.jpg'
+					image: assets + 'images/team/Aaron-Surty.jpg',
+					artwork: assets + 'images/team/Aaron-Surty-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/aaron-surty/'
 				},
 				{
 					name: 'Jamshid Saidov',
 					position: 'Software',
 					image: assets + 'images/team/Jamshid-Saidov.jpg',
-					artwork: assets + 'images/team/jamshid-saidov-artwork.jpg'
+					artwork: assets + 'images/team/Jamshid-Saidov-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/jamshid-saidov-728822a9/'
 				},
 				{
-					name: 'Aaron',
-					position: 'Not Found',
+					name: 'Aaron Maines',
+					position: 'Copywriter',
 					image: assets + 'images/team/Aaron.jpg',
-					artwork: assets + 'images/team/erfan-shekarchi-artwork.jpg'
+					artwork: assets + 'images/team/Aaron-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/aaron-maines-a487985/'
 				},
 				{
 					name: 'Alain Fundi',
-					position: 'Growth',
+					position: 'Sales',
 					image: assets + 'images/team/Alain-Fundi.jpg',
-					artwork: assets + 'images/team/alain-fundi-artwork.jpg'
-				},
-				{
-					name: 'Andy',
-					position: 'Not Found',
-					image: assets + 'images/team/Andy.jpg',
-					artwork: assets + 'images/team/andy-artwork.jpg'
-				},
-
-				{
-					name: 'Kevin',
-					position: 'Not Found',
-					image: assets + 'images/team/Kevin.jpg',
-					artwork: assets + 'images/team/kevin.jpg'
+					artwork: assets + 'images/team/Alain-Fundi-artwork.png',
+					linkedin: 'https://www.linkedin.com/in/alainfundi/'
 				},
 				{
 					name: 'Moein Bakhshi',
-					position: 'Research',
+					position: 'Marketing',
 					image: assets + 'images/team/Moein-Bakhshi.jpg',
-					artwork: assets + 'images/team/moein-bakhshi-artwork.jpg'
+					artwork: assets + 'images/team/Moein-Bakhshi-artwork.png',
+					linkedin: '#'
 				}
 			]
 		},
 		advisors: {
 			title: 'Meet Our Advisors',
-			description: 'Pulvinar auctor nisl, volutpat turpis enim id. ',
+			description: 'Experienced advisors',
 			list: [
 				{
 					name: 'Crhis Gale',
-					position: 'Founder | ViewWorks',
+					position: 'Founder | MetaEdge Ventures',
 					image: assets + 'images/advisors/Advisor-Crhis-Gale.jpg',
-					artwork: assets + 'images/advisors/crhis-gale-artwork.jpg'
+					artwork: assets + 'images/advisors/crhis-gale-artwork.png'
 				},
 				{
 					name: 'Zac Cohen',
 					position: 'Founder | FileBase',
 					image: assets + 'images/advisors/Advisor-Zac-Cohen.jpg',
-					artwork: assets + 'images/advisors/zac-cohen-artwork.jpg'
+					artwork: assets + 'images/advisors/zac-cohen-artwork.png'
 				},
 				{
 					name: 'Shaun Neff',
-					position: 'Founder | Neff Headwear',
+					position: 'Founder | Neff brands',
 					image: assets + 'images/advisors/Advisor-Shaun-Neff.jpg',
-					artwork: assets + 'images/advisors/shaun-neff-artwork.jpg'
+					artwork: assets + 'images/advisors/shaun-neff-artwork.png'
 				},
 				{
 					name: 'Andy Lark',
 					position: 'CEO | Group Lark',
 					image: assets + 'images/advisors/Advisor-Andy-Lark.jpg',
-					artwork: assets + 'images/advisors/andy-lark-artwork.jpg'
+					artwork: assets + 'images/advisors/andy-lark-artwork.png'
 				},
 				{
 					name: 'Stefaan Vervaet',
 					position: 'Ecosystem Lead | Protocol Labs',
 					image: assets + 'images/advisors/Advisor-Stefaan-Vervaet.jpg',
-					artwork: assets + 'images/advisors/andy-lark-artwork.jpg'
+					artwork: assets + 'images/advisors/andy-lark-artwork.png'
 				}
 			]
 		},
 		partners: {
 			title: 'Our Partners',
 			description:
-				'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore',
+				'Biggest names in the industry',
 			list: partnersList
 		},
 		memories: {
@@ -323,28 +323,28 @@
 				{
 					title: 'Marketing Intern',
 					description:
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc.',
+						'Are you passionate and eager to learn new things in a fast-pace environment',
 					cta: {
 						text: 'Apply',
-						url: '#'
+						url: 'https://www.linkedin.com/company/functionland/jobs/'
 					}
 				},
 				{
 					title: 'Community Growth Lead',
 					description:
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc.',
+						'Are you passionate and eager to learn new things in a fast-pace environment',
 					cta: {
 						text: 'Apply',
-						url: '#'
+						url: 'https://www.linkedin.com/company/functionland/jobs/'
 					}
 				},
 				{
 					title: 'Social Media Manager',
 					description:
-						'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc. Donec euismod, nisi eu blandit congue, nunc nisl consectetur nunc, euismod aliquam nisl nunc euismod nunc.',
+						'Are you passionate and eager to learn new things in a fast-pace environment',
 					cta: {
 						text: 'Apply',
-						url: '#'
+						url: 'https://www.linkedin.com/company/functionland/jobs/'
 					}
 				}
 			]
