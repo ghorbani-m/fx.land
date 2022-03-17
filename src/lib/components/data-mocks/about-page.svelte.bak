@@ -35,7 +35,7 @@
 					name: 'Kate Writhers',
 					position: 'Partnerships',
 					image: assets + 'images/team/Kate-Withers.jpg',
-					artwork: assets + 'images/team/Kate-Writhers-artwork.png',
+					artwork: assets + 'images/team/Kate-Withers-artwork.png',
 					linkedin: 'https://www.linkedin.com/in/kate-withers-hess-phd-33530023/'
 				},
 				{
@@ -83,8 +83,8 @@
 				{
 					name: 'Aaron-Surty',
 					position: 'Software',
-					image: assets + 'images/team/Erfan-Shekarchi.jpg',
-					artwork: assets + 'images/team/Erfan-Shekarchi-artwork.png',
+					image: assets + 'images/team/Aaron-Surty.jpg',
+					artwork: assets + 'images/team/Aaron-Surty-artwork.png',
 					linkedin: 'https://www.linkedin.com/in/aaron-surty/'
 				},
 				{

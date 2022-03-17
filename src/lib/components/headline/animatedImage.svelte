@@ -142,18 +142,18 @@
 		-webkit-transform: scale(0);
 		transform: scale(0);
 		will-change: transform;
-		transition: -webkit-transform 0.7s;
-		transition: transform 0.7s;
-		transition: transform 0.7s, -webkit-transform 0.7s;
-		/* transition-delay: 0.7s; */
+		transition: -webkit-transform 0.5s;
+		transition: transform 0.5s;
+		transition: transform 0.5s, -webkit-transform 0.5s;
+		/* transition-delay: 0.5s; */
 		overflow: hidden;
 	}
 	.image-transformer {
 		will-change: transform;
-		transition: -webkit-transform 0.8s;
-		transition: transform 0.8s;
-		transition: transform 0.8s, -webkit-transform 0.8s;
-		/* transition-delay: 0.7s; */
+		transition: -webkit-transform 0.6s;
+		transition: transform 0.6s;
+		transition: transform 0.6s, -webkit-transform 0.6s;
+		/* transition-delay: 0.5s; */
 	}
 	.image-wrapper.animateFromTop {
 		-webkit-transform: scale(1);
@@ -165,10 +165,10 @@
 		transform: scale(0);
 	}
 	.image-wrapper.animate {
-		transition: -webkit-transform 0.7s, opacity 0.4s;
-		transition: transform 0.7s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity 0.4s;
-		transition: transform 0.7s cubic-bezier(0.49, 0.45, 0.47, 1.24),
-			-webkit-transform 0.7s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity 0.4s;
+		transition: -webkit-transform 0.5s, opacity 0.4s;
+		transition: transform 0.5s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity 0.4s;
+		transition: transform 0.5s cubic-bezier(0.49, 0.45, 0.47, 1.24),
+			-webkit-transform 0.5s cubic-bezier(0.49, 0.45, 0.47, 1.24), opacity 0.4s;
 		opacity: 1;
 		-webkit-transform: scale(1);
 		transform: scale(1);
@@ -280,56 +280,56 @@
 			grid-column: 1/3;
 		}
 		div.image-box.design:nth-child(1) .image-wrapper {
-			animation-delay: 0.3s;
+			animation-delay: 0.15s;
 		}
 		div.image-box.design:nth-child(2) {
 			grid-row: 1/2;
 			grid-column: 3/5;
 		}
 		div.image-box.design:nth-child(2) .image-wrapper {
-			animation-delay: 0.3s;
+			animation-delay: 0.15s;
 		}
 		div.image-box.design:nth-child(3) {
 			grid-row: 1/3;
 			grid-column: 5/6;
 		}
 		div.image-box.design:nth-child(3) .image-wrapper {
-			animation-delay: 0.3s;
+			animation-delay: 0.15s;
 		}
 		div.image-box.design:nth-child(4) {
 			grid-row: 2/3;
 			grid-column: 1/2;
 		}
 		div.image-box.design:nth-child(4) .image-wrapper {
-			animation-delay: 0.2s;
+			animation-delay: 0.1s;
 		}
 		div.image-box.design:nth-child(5) {
 			grid-row: 2/3;
 			grid-column: 2/4;
 		}
 		div.image-box.design:nth-child(5) .image-wrapper {
-			animation-delay: 0.2s;
+			animation-delay: 0.1s;
 		}
 		div.image-box.design:nth-child(6) {
 			grid-row: 2/3;
 			grid-column: 4/5;
 		}
 		div.image-box.design:nth-child(6) .image-wrapper {
-			animation-delay: 0.2s;
+			animation-delay: 0.1s;
 		}
 		div.image-box.design:nth-child(7) {
 			grid-row: 3/4;
 			grid-column: 1/4;
 		}
 		div.image-box.design:nth-child(7) .image-wrapper {
-			animation-delay: 0.2s;
+			animation-delay: 0.1s;
 		}
 		div.image-box.design:nth-child(8) {
 			grid-row: 3/4;
 			grid-column: 4/6;
 		}
 		div.image-box.design:nth-child(8) .image-wrapper {
-			animation-delay: 0.2s;
+			animation-delay: 0.1s;
 		}
 	}
 </style>

@@ -119,14 +119,14 @@
 	// };
 	const fadeIn = {
 		reveal: [
-			{ duration: 300, delay: 100 },
-			{ duration: 200, delay: 300 },
-			{ duration: 200, delay: 400 },
-			{ duration: 200, delay: 600 },
-			{ duration: 200, delay: 700 },
-			{ duration: 200, delay: 800 },
-			{ duration: 200, delay: 900 },
-			{ duration: 200, delay: 1000 },
+			{ duration: 400, delay: 300 },
+			{ duration: 400, delay: 600 },
+			{ duration: 400, delay: 900 },
+			{ duration: 400, delay: 1200 },
+			{ duration: 400, delay: 1400 },
+			{ duration: 400, delay: 1600 },
+			{ duration: 400, delay: 1800 },
+			{ duration: 400, delay: 1800 },
 		],
 		none: { duration: 0, delay: 0 }
 	}

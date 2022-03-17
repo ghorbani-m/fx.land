@@ -18,15 +18,15 @@
 	};
 	const fadeIn = {
 		reveal: [
-			{ duration: 600, delay: 300 },
-			{ duration: 600, delay: 500 },
-			{ duration: 600, delay: 700 },
-			{ duration: 600, delay: 900 },
-			{ duration: 600, delay: 1100 },
-			{ duration: 600, delay: 1300 },
-			{ duration: 600, delay: 1500 },
-			{ duration: 600, delay: 1500 },
-			{ duration: 600, delay: 1500 }
+			{ duration: 300, delay: 100 },
+			{ duration: 200, delay: 300 },
+			{ duration: 200, delay: 400 },
+			{ duration: 200, delay: 600 },
+			{ duration: 200, delay: 700 },
+			{ duration: 200, delay: 800 },
+			{ duration: 200, delay: 900 },
+			{ duration: 200, delay: 1000 },
+			{ duration: 200, delay: 1000 }
 		],
 		none: { duration: 0, delay: 0 }
 	};
@@ -62,9 +62,9 @@
 				<h2 class="hero" use:inview={title.options} on:change={title.change}>
 					{#if title.inview}
 						<span class="one-liner">
-							<span class="bold" in:fade={fadeIn.reveal[0]}>Box </span>
-							<span in:fade={fadeIn.reveal[1]}>by </span>
-							<span class="teal-text" in:fade={fadeIn.reveal[2]}>Functionland </span>
+							<span class="bold" in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[0] : fadeIn.none}>Box </span>
+							<span in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[1] : fadeIn.none}>by </span>
+							<span class="teal-text" in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>Functionland </span>
 						</span>
 						<span class="one-liner">
 							<span in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[3] : fadeIn.none}
@@ -84,8 +84,6 @@
 							<span>The first </span>
 							<span>Blockchain-Attached Storage solution</span>
 						</span>
-						<span class="hidden">By the People, </span>
-						<span class="hidden">For the People. </span>
 					{/if}
 				</h2>
 			</div>

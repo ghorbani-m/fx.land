@@ -5,7 +5,7 @@
 		page: {
 			heading: {
 				title: 'About Us',
-				description: 'Pulvinar auctor nisl, volutpat turpis enim id. '
+				description: 'Want to know who is behind the project? '
 			},
 			intro: {
 				title: 'We believe in a fairer future.',
