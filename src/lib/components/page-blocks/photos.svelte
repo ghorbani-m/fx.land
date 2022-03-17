@@ -11,6 +11,7 @@
 </script>
 
 <svelte:window bind:innerWidth />
+
 <section>
 	<div class="container">
 		<div class="heading">
@@ -19,7 +20,7 @@
 		</div>
 		{#if ready === true}
 			{#if innerWidth > 721}
-				<!-- <PhotosGrid {data} {innerWidth}/> -->
+				<PhotosGrid {data} {innerWidth}/>
 			{:else}
 				<PhotosSlider {data} {innerWidth}/>
 			{/if}

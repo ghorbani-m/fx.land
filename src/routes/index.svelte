@@ -18,7 +18,7 @@
 </script>
 
 <svelte:head>
-	<title>FunctionLand</title>
+	<title>FunctionLand: Blockchain-Attached Storage</title>
 </svelte:head>
 <main>
 	<!-- <Frames /> -->

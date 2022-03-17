@@ -32,21 +32,7 @@
 				class:animateFromBottom={animated.scrollDirection === 'down'}
 				class:animateFromTop={animated.scrollDirection !== 'down'}
 			>
-				<!--<img
-					src={image.photo.srcset.small.src}
-					alt=""
-					class={`${
-						image.ref != 'plug-n-play'
-							? image.position % 2 == 0
-								? 'vibrate-1-3s'
-								: 'vibrate-1-6s'
-							: ''
-					} ${image.ref}`}
-					width={image.photo.srcset[image.size].width}
-					height={image.photo.srcset[image.size].height}
-					loading="lazy"
-					decoding="async"
-				/>-->
+			{#if image.ref == 'apps-without-ads'}
 				<video
 						src={image.photo.srcset.large.src}
 						class={image.ref}
@@ -60,6 +46,23 @@
 					>
 						<track default kind="captions" />
 					</video>
+				{:else}
+					<img
+					src={image.photo.srcset.small.src}
+					alt=""
+					class={`${
+						image.ref != 'plug-n-play'
+							? image.position % 2 == 0
+								? 'vibrate-1-3s'
+								: 'vibrate-1-6s'
+							: ''
+					} ${image.ref}`}
+					width={image.photo.srcset[image.size].width}
+					height={image.photo.srcset[image.size].height}
+					loading="lazy"
+					decoding="async"
+				/>
+				{/if}
 			</div>
 		</div>
 	</div>

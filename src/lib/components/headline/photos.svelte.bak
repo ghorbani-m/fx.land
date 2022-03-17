@@ -17,7 +17,7 @@
 {#if photos}
 	<div
 		class={`photos  ${data.ref} ${
-			$innerWidth > 960 && (data.ref != 'design' && data.ref != 'plug-n-play' ? 'de-contain' : '')
+			 (data.ref != 'design' && data.ref != 'plug-n-play' ? 'de-contain' : '')
 		}`}
 		use:inview={options}
 		on:change={handleChange}>
