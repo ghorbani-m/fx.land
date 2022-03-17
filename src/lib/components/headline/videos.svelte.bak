@@ -87,7 +87,6 @@
 								</video>
 							</FadeIn>
 						{:else}
-						<div>test</div>
 							<FadeIn inview={observer} delay={0.1} inheritbg={true}>
 								<video id="encryption"
 									playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}>
