@@ -33,6 +33,5 @@
 		--body-bg: var(--body-gradient);
 		--footer-nav-border-color: var(--w-o-6);
 		--bkg-ac: var(--gray-4);
-		--on-bkg-ac-txt: var(--gray-1);
 	}
 }

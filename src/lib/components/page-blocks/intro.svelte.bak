@@ -37,7 +37,7 @@
 		align-items: center;
 	}
 	.description {
-		color: var(--on-bkg-ac-txt);
+		color: #00000080;
 		font-size: 18px;
 		font-weight: 400;
 	}
