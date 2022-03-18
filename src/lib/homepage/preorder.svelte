@@ -247,7 +247,7 @@
 						class="cta"
 						in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}
 					>
-						<a class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
+						<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
 							>Pre-order</a
 						>
 					</div>

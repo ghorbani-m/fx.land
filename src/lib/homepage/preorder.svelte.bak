@@ -241,7 +241,7 @@
 			<div class="actionWrapper" id="preordercta">
 				{#if preorder.inview}
 					<p in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
-						Box is available now!
+						Box is available soon!
 					</p>
 					<div
 						class="cta"
@@ -252,7 +252,7 @@
 						>
 					</div>
 				{:else}
-					<p class="hidden">Box is available now!</p>
+					<p class="hidden">Box is available soon!</p>
 					<div class="cta hidden">
 						<a class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
 							>Pre-order</a
