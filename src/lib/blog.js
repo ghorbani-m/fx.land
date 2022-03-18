@@ -1,6 +1,6 @@
 import { readable } from 'svelte/store';
 import parse from 'rss-to-json';
-const targetUrl = 'https://blog.fx.land/rss/';
+const targetUrl = 'https://functionland.ghost.io/ghost/api/v4/content/posts/?limit=9&key=8fb27f029cb68e715fb6be3f53';
 
 export function initialValue() {
 	return {
@@ -26,13 +26,13 @@ async function fetchBlogData(data, set) {
 	try {
 		parse(targetUrl)
 			.then((result) => {
-				data.title = result.title;
-				data.description = result.description;
-				data.image = result.image;
-				data.link = result.link;
-				data.rssLink = result.rssLink;
-				data.category = result.category;
-				data.items = result.items;
+				//data.title = result.title;
+				//data.description = result.description;
+				//data.image = result.image;
+				//data.link = result.link;
+				//data.rssLink = result.rssLink;
+				//data.category = result.category;
+				data.items = result.posts;
 				data.ready = true;
 				set(data);
 			})
