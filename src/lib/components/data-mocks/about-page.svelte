@@ -40,7 +40,7 @@
 				},
 				{
 					name: 'Arman Shirani',
-					position: 'CMO',
+					position: 'Marketing',
 					image: assets + 'images/team/Arman-shirani.jpg',
 					artwork: assets + 'images/team/Arman-shirani-artwork.png',
 					linkedin: 'https://www.linkedin.com/in/armanshirani/'
