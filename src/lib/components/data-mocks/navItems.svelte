@@ -34,7 +34,7 @@
 		],
 		cta: {
 			path: 'https://fx.land/nft/',
-			text: 'Pre-Order',
+			text: 'Pre-Register',
 			type: 'scroll',
 			refrence: 'preorder'
 		}

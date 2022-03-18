@@ -128,7 +128,7 @@
 				{:else}
 					<p>Box is available now!</p>
 					<div class="cta" >
-						<a class="btn btn-cta" sveltekit:prefetch href="/preorder">Pre-order</a>
+						<a class="btn btn-cta" sveltekit:prefetch href="/preorder">Pre-register</a>
 					</div>
 				{/if}
 			</div>

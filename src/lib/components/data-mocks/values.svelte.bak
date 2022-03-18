@@ -40,7 +40,7 @@
 				'Box gives you private cloud storage. No ads. No tracking. No subscription fees. It is designed to be a self-sustainable ecosystem for both users and developers. <br> No kidding. ',
 			main_title: 'Start with Box Photos! ',
 			main_desc:
-				'Our app Photos - recognized on GitHub as in the top 3% of open-source apps worldwide - is a polished, forever-free gallery that works seamlessly on any device. It provides fast, easy access and sharing from anywhere, across any device.',
+				'Our app Photos - recognized on GitHub as in the top 3% of open-source apps worldwide - is a polished, forever-free application that works seamlessly on any device. It provides fast, easy access and sharing from anywhere, across any device.',
 			show_cta: true,
 			cta_text: 'Learn more',
 			videos: [],
@@ -131,7 +131,7 @@
 				'Box quietly earns $FULA tokens by providing backups and resources to others on the network. When you make backups, take advantage of cloud-alike services or use apps,  Box compensates the open-source developers, UX designers, and contributors who built them for you.',
 			main_title: 'Earn Crypto',
 			main_desc:
-				'Thanks to BAS, our Blockchain-Attached Storage solution, Box lets you share storage and CPU power with others while quietly mining $FULA tokens in the background.',
+				'Thanks to BAS, our Blockchain-Attached Storage solution, Box lets you share storage and CPU power with others while quietly mining FULA tokens in the background.',
 			show_cta: true,
 			cta_text: 'Learn more',
 			videos: [
