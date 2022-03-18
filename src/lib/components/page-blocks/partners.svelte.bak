@@ -17,7 +17,7 @@
 	section {
 		font-family: var(--inter);
 		padding: 3rem 0 5rem;
-		background: white
+		background: #f6f6f6;
 	}
 	.heading {
 		font-family: var(--inter);

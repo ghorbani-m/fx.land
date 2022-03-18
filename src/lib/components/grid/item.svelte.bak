@@ -44,8 +44,7 @@
 		overflow: hidden;
 	}
 	.info-wrapper {
-		background: var(--bkg-ac);
-		color: var(--on-bkg-ac-txt);
+		background: #f1f1f3;
 	}
 	.title {
 		font-size: 1rem;
@@ -56,10 +55,9 @@
 		font-weight: 600;
 	}
 	.image-wrapper {
-		background: var(--bkg-ac);
+		background: #f1f1f3;
 		position: relative;
 		overflow: hidden;
-		color: var(--on-bkg-ac-txt);
 	}
 	img {
 		width: 100%;
