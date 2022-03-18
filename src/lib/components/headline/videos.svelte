@@ -34,7 +34,6 @@
 						video.addEventListener('timeupdate', function () {
 						/*if (video.currentTime >= 6) {
 							video.currentTime = 5.5;
-							console.log('here');
 							video.play();
 						}*/
 						}, false);

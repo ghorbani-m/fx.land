@@ -10,7 +10,7 @@
 
 <svelte:window bind:innerWidth />
 <Swiper modules={[Pagination, Autoplay]} autoHeight pagination={{ clickable: true }} autoplay={{
-            delay: 1000,
+            delay: 2500,
             disableOnInteraction: true
         }}  loop={ {enabled: true}}>
 	{#each Array(pages) as slide, i}

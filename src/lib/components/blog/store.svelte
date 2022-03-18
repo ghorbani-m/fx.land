@@ -27,7 +27,6 @@
 		try {
 			const response = await fetch(targetUrl);
 			const result = await response.json();
-			console.log(result);
 					//data.title = result.title;
 					//data.description = result.description;
 					//data.image = result.image;
