@@ -241,15 +241,33 @@
 			<div class="actionWrapper" id="preordercta">
 				{#if preorder.inview}
 					<p in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
-						Box is available soon!
+						Box is available soon! Pre-register for up to 50% off.
 					</p>
 					<div
 						class="cta"
 						in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}
 					>
-						<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
+						<!--<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
 							>Pre-order</a
-						>
+						>-->
+						<div bind:this={ctaButtonRef}>
+						<!-- MailerLite Universal -->
+							<script>
+							(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+							var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+							f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+							var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+							_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+							var ml_account = ml('accounts', '3699446', 'b2k9f5k0b8', 'load');
+							</script>
+						<!-- End MailerLite Universal -->
+						<div class="ml-form-embed"
+						  data-account="3699446:b2k9f5k0b8"
+						  data-form="5335676:t0d8c1">
+						</div>
+
+						</div>
 					</div>
 				{:else}
 					<p class="hidden">Box is available soon!</p>
@@ -297,7 +315,6 @@
 	}
 	p,
 	.cta {
-		height: 80px;
 		display: grid;
 		position: relative;
 		z-index: 1;

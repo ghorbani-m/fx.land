@@ -73,7 +73,7 @@
 		transition-property: border-color, color, background-color !important;
 		transition-duration: 0.25s !important;
 		transition-timing-function: ease-in-out !important;
-		min-width: var(--input-btn-width) !important;
+
 		width: var(--input-btn-width);
 		font-weight: var(--input-btn-font-weight) !important;
 		align-items: center !important;
@@ -96,7 +96,7 @@
 		transition-property: border-color, color, background-color !important;
 		transition-duration: 0.25s !important;
 		transition-timing-function: ease-in-out !important;
-		min-width: var(--input-btn-width) !important;
+
 		width: var(--input-btn-width);
 		font-weight: var(--input-btn-font-weight) !important;
 		align-items: center !important;
