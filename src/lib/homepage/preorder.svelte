@@ -239,7 +239,7 @@
 				</div>
 			{/if}
 			<div class="actionWrapper" id="preordercta">
-				{#if preorder.inview}
+				
 					<p in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
 						Box is available soon! Pre-register for up to 50% off.
 					</p>
@@ -269,14 +269,7 @@
 
 						</div>
 					</div>
-				{:else}
-					<p class="hidden">Box is available soon!</p>
-					<div class="cta hidden">
-						<a class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
-							>Pre-order</a
-						>
-					</div>
-				{/if}
+				
 			</div>
 		</div>
 	</div>
