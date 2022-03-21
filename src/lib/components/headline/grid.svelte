@@ -61,7 +61,7 @@
 					{/if}
 					{#if presection.image.src.length > 0}
 						<FadeIn inview={section}>
-							<img src={presection.image.src} alt="" type={presection.image.type} loading="lazy" />
+							<img src={presection.image.src} alt={presection.image.alt} type={presection.image.type} loading="lazy" />
 						</FadeIn>
 					{/if}
 				</div>

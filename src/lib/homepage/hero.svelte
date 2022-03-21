@@ -35,6 +35,7 @@
 			desktop: assets + 'images/home/hero-image-desktop.jpg',
 			mobile: assets + 'images/home/hero-image-desktop.jpg'
 		},
+		alt: "Functionland's Blockchain-Attached Storage creates a sustainable ecosystem for app developers to create high-quality, free-forever applications which keep users' data private",
 		options: {
 			threshold: 0.01,
 			unobserveOnEnter: false
@@ -95,12 +96,12 @@
 							{#if image.inview}
 								<img
 									src={image.src.mobile}
-									alt=""
+									alt={image.alt}
 									loading="eager"
 									in:fade={image.scrollDirection !== 'down' ? fadeIn.reveal[7] : fadeIn.none}
 								/>
 							{:else}
-								<img src={image.src.mobile} alt="" loading="lazy" class="hidden" />
+								<img src={image.src.mobile} alt={image.alt} loading="lazy" class="hidden" />
 							{/if}
 						</picture>
 					</div>
@@ -117,7 +118,7 @@
 							<source srcset={image.src.desktop} media="(min-width: 960px)" />
 							<img
 								src={image.src.mobile}
-								alt=""
+								alt={image.alt}
 								loading="eager"
 								class:animate={image.inview}
 								class:animateFromBottom={image.scrollDirection === 'down'}

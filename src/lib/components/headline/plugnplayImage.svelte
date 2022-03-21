@@ -42,22 +42,24 @@
 			<img
 				in:fade={image.scrollDirection !== 'down' ? fadeIn.reveal[3] : fadeIn.none}
 				src={image.photo.srcset.small.src}
-				alt=""
+				alt={image.photo.alt}
 				class={image.ref}
 				width={image.photo.srcset.small.width}
 				height={image.photo.srcset.small.height}
 				loading="lazy"
 				decoding="async"
+				type={image.photo.type}
 			/>
 		{:else}
 			<img
 				src={image.photo.srcset.small.src}
-				alt=""
+				alt={image.photo.alt}
 				class="hidden {image.ref}"
 				width={image.photo.srcset.small.width}
 				height={image.photo.srcset.small.height}
 				loading="lazy"
 				decoding="async"
+				type={image.photo.type}
 			/>
 		{/if}
 	</div>
@@ -70,12 +72,13 @@
 	>
 		<img
 			src={image.photo.srcset.large.src}
-			alt=""
+			alt={image.photo.alt}
 			class={image.ref}
 			width={image.photo.srcset.large.width}
 			height={image.photo.srcset.large.height}
 			loading="lazy"
 			decoding="async"
+			type={image.photo.type}
 		/>
 	</div>
 {/if}

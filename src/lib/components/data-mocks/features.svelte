@@ -30,7 +30,8 @@
 							height: 1073
 						}
 					},
-					type: 'image/jpg'
+					type: 'image/jpg',
+					alt: 'Box is a modular, plug and play decentralized application server that auto-mines tokens for the users.'
 				}
 			]
 		},
