@@ -29,7 +29,7 @@
 	<Preorder />
 	<News />
 	<Partners />
-	<MouseMove />
+	<!-- <MouseMove /> -->
 	<LazyLoadVideos />
 </main>
 
