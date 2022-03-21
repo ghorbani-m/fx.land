@@ -58,7 +58,7 @@
 							height: 495
 						}
 					},
-					type: 'image/jpg'
+					type: 'video/mp4'
 				},
 				{
 					srcset: {
@@ -73,7 +73,7 @@
 							height: 563
 						}
 					},
-					type: 'image/jpg'
+					type: 'video/mp4'
 				},
 				{
 					srcset: {
@@ -88,7 +88,7 @@
 							height: 388
 						}
 					},
-					type: 'image/jpg'
+					type: 'video/mp4'
 				},
 				{
 					srcset: {
@@ -103,22 +103,22 @@
 							height: 463
 						}
 					},
-					type: 'image/jpg'
+					type: 'video/mp4'
 				},
 				{
 					srcset: {
 						small: {
 							src: assets + 'videos/bgloop/5.mp4',
-							width: 265,
-							height: 229
+							width: 384,
+							height: 216
 						},
 						large: {
 							src: assets + 'videos/bgloop/5.mp4',
-							width: 325,
-							height: 591
+							width: 384,
+							height: 216
 						}
 					},
-					type: 'image/jpg'
+					type: 'video/mp4'
 				}
 			]
 		},
