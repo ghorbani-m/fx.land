@@ -58,7 +58,7 @@
 							height: 495
 						}
 					},
-					type: 'video/mp4'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
@@ -73,7 +73,7 @@
 							height: 563
 						}
 					},
-					type: 'video/mp4'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
@@ -88,7 +88,7 @@
 							height: 388
 						}
 					},
-					type: 'video/mp4'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
@@ -103,7 +103,7 @@
 							height: 463
 						}
 					},
-					type: 'video/mp4'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
@@ -118,7 +118,7 @@
 							height: 216
 						}
 					},
-					type: 'video/mp4'
+					type: 'image/jpg'
 				}
 			]
 		},
