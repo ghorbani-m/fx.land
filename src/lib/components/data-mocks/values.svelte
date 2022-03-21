@@ -37,7 +37,7 @@
 			ref: 'apps-without-ads',
 			intro_title: 'Apps Without Ads or Subscription',
 			intro_desc:
-				'Box gives you private cloud-alike storage. Sharing. Collaboration. No ads. No tracking. No subscription fees. It is designed to be a self-sustainable ecosystem for both users and developers. <br> No kidding. ',
+				'Box gives you private cloud storage. No ads. No tracking. No subscription fees. It is designed to be a self-sustainable ecosystem for both users and developers. <br> No kidding. ',
 			main_title: 'Start with Box Photos! ',
 			main_desc:
 				'Our app Photos - recognized on GitHub as in the top 3% of open-source apps worldwide - is a polished, forever-free gallery that works seamlessly on any device. It provides fast, easy access and sharing from anywhere, across any device.',
