@@ -15,6 +15,7 @@
 		font-family: var(--inter);
 		padding: 80px 0;
 		text-align: center;
+		font-display: swap;
 	}
 	h1 {
 		font-size: 44px;

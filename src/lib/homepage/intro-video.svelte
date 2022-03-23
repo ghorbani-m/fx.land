@@ -166,6 +166,7 @@
 		background-clip: text;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
+		font-display: swap;
 	}
 	section {
 		height: var(--intro-height);

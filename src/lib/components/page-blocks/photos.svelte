@@ -31,11 +31,13 @@
 	section {
 		font-family: var(--inter);
 		padding: 3rem 0 5rem;
+		font-display: swap;
 	}
 	.heading {
 		font-family: var(--inter);
 		padding: 80px 0;
 		text-align: center;
+		font-display: swap;
 	}
 	.title {
 		font-size: 44px;

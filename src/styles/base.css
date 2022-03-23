@@ -1,8 +1,12 @@
+@font-face {
+  font-display: swap;
+}
 html {
 	font-family: var(--montserrat);
 	font-size: var(--normal-f-size);
 	/* overflow: hidden;
 	overflow-y: scroll; */
+	font-display: swap;
 }
 
 html {

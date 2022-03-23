@@ -317,7 +317,7 @@ on:touchmove|nonpassive={mouseWheelEvent} -->
 		letter-spacing: var(--slogan-letter-spacing);
 		text-align: center;
 		max-width: var(--slogan-max-width);
-		font-family: var(--raleway);
+		font-display: swap;
 		margin: 0 auto;
 		word-break: break-word;
 		position: relative;

@@ -67,18 +67,18 @@
 	h1 {
 		color: var(--actionColor);
 		pointer-events: none;
-		font-family: var(--roboto);
 		font-size: var(--slogan-font-size);
 		font-weight: var(--slogan-font-weight);
 		line-height: var(--slogan-line-height);
 		letter-spacing: var(--slogan-letter-spacing);
 		text-align: center;
 		max-width: var(--slogan-max-width);
-		font-family: var(--raleway);
+		font-family: var(--roboto);
 		margin: 0 auto;
 		word-break: break-word;
 		position: relative;
 		z-index: 4;
     	mix-blend-mode: screen;
+		font-display: swap;
 	}
 </style>

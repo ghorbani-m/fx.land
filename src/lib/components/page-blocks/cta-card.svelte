@@ -26,10 +26,12 @@
 		border-radius: 20px;
 		justify-content: center;
 		text-align: center;
+		font-display: swap;
 	}
 	.btn-cta {
 		font-size: 15px;
 		font-family: var(--montserrat);
 		line-height: 18px;
+		font-display: swap;
 	}
 </style>

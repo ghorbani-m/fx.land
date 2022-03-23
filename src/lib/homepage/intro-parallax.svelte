@@ -239,12 +239,12 @@
 		letter-spacing: var(--slogan-letter-spacing);
 		text-align: center;
 		max-width: var(--slogan-max-width);
-		font-family: var(--raleway);
 		margin: 0 auto;
 		word-break: break-word;
 		position: relative;
 		z-index: 4;
     	mix-blend-mode: screen;
+		font-display: swap;
 	}
 	@media (max-width: 720px) {
 		.m-one-liner {

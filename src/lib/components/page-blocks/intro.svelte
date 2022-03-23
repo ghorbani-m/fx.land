@@ -15,6 +15,7 @@
 <style>
 	section {
 		font-family: var(--inter);
+		font-display: swap;
 	}
 	.grid {
 		display: grid;

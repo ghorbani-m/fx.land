@@ -57,6 +57,7 @@
 		transition-property: border-color, color, background-color !important;
 		transition-duration: 0.25s !important;
 		transition-timing-function: ease-in-out !important;
+		font-display: swap;
 	}
 	:global(* *.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button[type="submit"].primary:not(:disabled):not([style])) {
 		font-family: var(--inter) !important;
@@ -79,6 +80,7 @@
 		align-items: center !important;
 		justify-content: center !important;
 		display: inline-grid !important;
+		font-display: swap;
 	}
 
 	:global(.sub-wrapper .sub-form form button[type="submit"].primary) {
@@ -102,6 +104,7 @@
 		align-items: center !important;
 		justify-content: center !important;
 		display: inline-grid !important;
+		font-display: swap;
 	}
 
 	:global(.sub-wrapper input[type="email"], .sub-wrapper input[type="text"]) {
