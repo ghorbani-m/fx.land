@@ -35,6 +35,7 @@
 			desktop: assets + 'images/home/hero-image-desktop.jpg',
 			mobile: assets + 'images/home/hero-image-desktop.jpg'
 		},
+		alt: "Functionland's Blockchain-Attached Storage creates a sustainable ecosystem for app developers to create high-quality, free-forever applications which keep users' data private",
 		options: {
 			threshold: 0.01,
 			unobserveOnEnter: false
@@ -95,12 +96,12 @@
 							{#if image.inview}
 								<img
 									src={image.src.mobile}
-									alt=""
+									alt={image.alt}
 									loading="eager"
 									in:fade={image.scrollDirection !== 'down' ? fadeIn.reveal[7] : fadeIn.none}
 								/>
 							{:else}
-								<img src={image.src.mobile} alt="" loading="lazy" class="hidden" />
+								<img src={image.src.mobile} alt={image.alt} loading="lazy" class="hidden" />
 							{/if}
 						</picture>
 					</div>
@@ -117,7 +118,7 @@
 							<source srcset={image.src.desktop} media="(min-width: 960px)" />
 							<img
 								src={image.src.mobile}
-								alt=""
+								alt={image.alt}
 								loading="eager"
 								class:animate={image.inview}
 								class:animateFromBottom={image.scrollDirection === 'down'}
@@ -187,11 +188,6 @@
 <img src="https://track.mailerlite.com/webforms/o/5614488/q9h9a4?v1647787747" width="1" height="1" style="max-width:1px;max-height:1px;visibility:hidden;padding:0;margin:0;display:block" alt="." border="0">
 <script src="https://static.mailerlite.com/js/w/webforms.min.js?v9b62042f798751c8de86a784eab23614" type="text/javascript"></script>
 <!-- END Mailerlite -->
-
-<div class="ml-form-embed"
-  data-account="3699446:b2k9f5k0b8"
-  data-form="5614488:q9h9a4">
-</div>
 		</div>
 	</div>
 </section>

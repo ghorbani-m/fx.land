@@ -86,17 +86,17 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/2.webp',
+							src: assets + 'images/photos-app/photos/2.jpg',
 							width: 247,
 							height: 192
 						},
 						large: {
-							src: assets + 'images/photos-app/photos/2.webp',
+							src: assets + 'images/photos-app/photos/2.jpg',
 							width: 427,
 							height: 288
 						}
 					},
-					type: 'image/webp'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
@@ -116,62 +116,62 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/4.webp',
+							src: assets + 'images/photos-app/photos/4.jpg',
 							width: 139,
 							height: 293
 						},
 						large: {
-							src: assets + 'images/photos-app/photos/4.webp',
+							src: assets + 'images/photos-app/photos/4.jpg',
 							width: 584,
 							height: 326
 						}
 					},
-					type: 'image/webp'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/6.webp',
+							src: assets + 'images/photos-app/photos/6.jpg',
 							width: 180,
 							height: 245
 						},
 						large: {
-							src: assets + 'images/photos-app/photos/6.webp',
+							src: assets + 'images/photos-app/photos/6.jpg',
 							width: 167,
 							height: 282
 						}
 					},
-					type: 'image/webp'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/5.webp',
+							src: assets + 'images/photos-app/photos/5.jpg',
 							width: 265,
 							height: 229
 						},
 						large: {
-							src: assets + 'images/photos-app/photos/5.webp',
+							src: assets + 'images/photos-app/photos/5.jpg',
 							width: 433,
 							height: 279
 						}
 					},
-					type: 'image/webp'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/8.webp',
+							src: assets + 'images/photos-app/photos/8.jpg',
 							width: 265,
 							height: 229
 						},
 						large: {
-							src: assets + 'images/photos-app/photos/8.webp',
+							src: assets + 'images/photos-app/photos/8.jpg',
 							width: 209,
 							height: 276
 						}
 					},
-					type: 'image/webp'
+					type: 'image/jpg'
 				},
 				{
 					srcset: {
