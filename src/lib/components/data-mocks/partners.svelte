@@ -126,6 +126,13 @@
 			main: assets + 'images/partners/power-one.png',
 			dark: assets + 'images/partners/white/power-one.png',
 			light: assets + 'images/partners/dark/power-one.png'
+		},
+		{
+			id: '19',
+			title: 'Cogintent Ventures invested in Functionland',
+			main: assets + 'images/partners/congitent.png',
+			dark: assets + 'images/partners/white/congitent.png',
+			light: assets + 'images/partners/dark/congitent.png'
 		}
 	];
 </script>
