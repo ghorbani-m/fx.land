@@ -130,9 +130,9 @@
 		{
 			id: '19',
 			title: 'Cogintent Ventures invested in Functionland',
-			main: assets + 'images/partners/cogitent.png',
-			dark: assets + 'images/partners/white/cogitent.png',
-			light: assets + 'images/partners/dark/cogitent.png'
+			main: assets + 'images/partners/congitent.png',
+			dark: assets + 'images/partners/white/congitent.png',
+			light: assets + 'images/partners/dark/congitent.png'
 		}
 	];
 </script>
