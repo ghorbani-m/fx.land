@@ -204,20 +204,20 @@
 							<div class="frame active frame_{frame}">
 								<picture>
 									<source
-										srcset={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-										type="image/jpeg"
+										srcset={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+										type="image/webp"
 										width="1920"
 										height="1080"
 									/>
 									<img
-										src={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+										src={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
 										alt=""
 										loading="lazy"
 										class="lazy"
 									/>
 								</picture>
 							</div>
-						<!-- {:else}
+						{:else}
 							<div class="frame frame_{frame}">
 								<picture>
 									<source
@@ -233,7 +233,7 @@
 										class="lazy"
 									/>
 								</picture>
-							</div> -->
+							</div>
 						{/if}
 					{/each}
 				</div>
