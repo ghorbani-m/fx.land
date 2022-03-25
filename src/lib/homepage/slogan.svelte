@@ -73,7 +73,7 @@
 		letter-spacing: var(--slogan-letter-spacing);
 		text-align: center;
 		max-width: var(--slogan-max-width);
-		font-family: var(--roboto);
+		font-family: var(--roboto), Arial, Helvetica, sans-serif;
 		margin: 0 auto;
 		word-break: break-word;
 		position: relative;

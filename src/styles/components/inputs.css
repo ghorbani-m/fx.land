@@ -1,5 +1,5 @@
 .input {
-	font-family: var(--inter);
+	font-family: var(--inter), Arial, Helvetica, sans-serif;
 	font-size: var(--input-font-size);
 	color: var(--input-color);
 	line-height: var(--input-line-height);

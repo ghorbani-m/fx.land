@@ -14,7 +14,7 @@
 
 <style>
 	section {
-		font-family: var(--inter);
+		font-family: var(--inter), Arial, Helvetica, sans-serif;
 		font-display: swap;
 	}
 	.grid {

@@ -11,7 +11,7 @@
 <style>
 	.card {
 		margin: 0 auto;
-		font-family: var(--inter);
+		font-family: var(--inter), Arial, Helvetica, sans-serif;
 		line-height: 30px;
 		font-size: 20px;
 		aspect-ratio: 250/372;
@@ -30,7 +30,7 @@
 	}
 	.btn-cta {
 		font-size: 15px;
-		font-family: var(--montserrat);
+		font-family: var(--montserrat), Arial, Helvetica, sans-serif;
 		line-height: 18px;
 		font-display: swap;
 	}

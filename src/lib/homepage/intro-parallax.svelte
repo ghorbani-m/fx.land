@@ -232,7 +232,7 @@
 	h1 {
 		color: var(--actionColor);
 		pointer-events: none;
-		font-family: var(--roboto);
+		font-family: var(--roboto), Arial, Helvetica, sans-serif;
 		font-size: var(--slogan-font-size);
 		font-weight: var(--slogan-font-weight);
 		line-height: var(--slogan-line-height);

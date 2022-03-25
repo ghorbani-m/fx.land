@@ -43,7 +43,7 @@
 
 	/* INPUT/BUTTON/Form Styles */
 	:global(.sub-wrapper input) {
-		font-family: var(--inter) !important;
+		font-family: var(--inter), Arial, Helvetica, sans-serif !important;
 		font-size: var(--input-font-size) !important;
 		color: var(--input-color) !important;
 		line-height: var(--input-line-height) !important;
@@ -60,7 +60,7 @@
 		font-display: swap;
 	}
 	:global(* *.ml-form-embedContainer .ml-form-embedWrapper .ml-form-embedBody .ml-form-horizontalRow button[type="submit"].primary:not(:disabled):not([style])) {
-		font-family: var(--inter) !important;
+		font-family: var(--inter), Arial, Helvetica, sans-serif !important;
 		font-size: var(--input-font-size) !important;
 		color: var(--input-color) !important;
 		line-height: var(--input-line-height) !important;
@@ -84,7 +84,7 @@
 	}
 
 	:global(.sub-wrapper .sub-form form button[type="submit"].primary) {
-		font-family: var(--inter) !important;
+		font-family: var(--inter), Arial, Helvetica, sans-serif !important;
 		font-size: var(--input-font-size) !important;
 		color: var(--input-color) !important;
 		line-height: var(--input-line-height) !important;

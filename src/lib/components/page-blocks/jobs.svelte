@@ -49,12 +49,12 @@
 
 <style>
 	section {
-		font-family: var(--inter);
+		font-family: var(--inter), Arial, Helvetica, sans-serif;
 		padding: 3rem 0 8rem;
 		font-display: swap;
 	}
 	.heading {
-		font-family: var(--inter);
+		font-family: var(--inter), Arial, Helvetica, sans-serif;
 		padding: 80px 0;
 		text-align: center;
 		font-display: swap;

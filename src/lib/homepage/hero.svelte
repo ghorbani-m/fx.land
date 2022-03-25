@@ -207,7 +207,7 @@
 		display: block;
 	}
 	h2 {
-		font-family: var(--montserrat);
+		font-family: var(--montserrat), Arial, Helvetica, sans-serif;
 		font-size: var(--hero-font-size);
 		font-weight: var(--hero-font-weight);
 		line-height: var(--hero-line-height);
