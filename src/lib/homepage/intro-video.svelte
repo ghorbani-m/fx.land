@@ -126,7 +126,7 @@
 <svelte:window on:scroll={goToNextSection} />
 <section
 	on:mousewheel={mouseWheelEvent}
-	on:touchmove={ontouchmoveEvent}
+	on:touchmove|passive={ontouchmoveEvent}
 	bind:clientHeight={introHeight}
 	bind:this={introSection}
 >
