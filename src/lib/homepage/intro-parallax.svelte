@@ -148,6 +148,7 @@
 		height: 125vh;
 		top: 60px;
 		width: 100vw;
+		background-color:#494753;
 	}
 	.parallax-container img {
 		position: absolute;
