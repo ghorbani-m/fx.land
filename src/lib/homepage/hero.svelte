@@ -287,7 +287,7 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 			transform-origin: center;
-			aspect-ratio: 1678/947;
+			/* aspect-ratio: 1678/947; */
 			width: auto;
 			max-width: unset;
 			margin: 0 auto;
