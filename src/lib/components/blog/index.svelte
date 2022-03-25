@@ -20,10 +20,19 @@
 	let ready;
 	onMount(()=>{
 		ready = true;
+
+		setTimeout(function(){
+			document.querySelectorAll('.news-item').forEach(function(item, i){
+				var img = item.getElementsByTagName("img")[0];
+				img.src = img.getAttribute("data-src");
+			});
+		}, 2000);
 	})
 	function updateBlogData(data) {
 		blogData = data;
 	}
+
+	
 
 </script>
 
