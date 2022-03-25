@@ -76,7 +76,7 @@
 		{/if}
 	{/each}
 </svelte:head>
-<svelte:window bind:scrollY={scrollY} on:scroll={detectScroll}/>
+<svelte:window bind:scrollY={scrollY} on:scroll|nonpassive={detectScroll}/>
 <!-- <b>currentFrame {currentFrame}</b> -->
 <section>
 	<div class="parallax-container">

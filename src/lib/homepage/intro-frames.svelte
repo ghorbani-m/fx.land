@@ -138,7 +138,7 @@
 </svelte:head>
 <svelte:window
 	bind:scrollY
-	on:scroll|passive={detectScroll}
+	on:scroll|nonpassive={detectScroll}
 	/>
 	<!-- on:mousewheel|nonpassive={preventWhilePlaying}
 	on:touchmove|nonpassive={preventWhilePlaying} -->

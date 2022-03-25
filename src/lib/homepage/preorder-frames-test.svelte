@@ -79,7 +79,7 @@
         };
     });
 </script>
-<svelte:window on:scroll={detectScroll}/>
+<svelte:window on:scroll|nonpassive={detectScroll}/>
 <section id="preorder" use:inview={preorder.options} on:change={preorder.change}>
 	<div class="container">
 		<div class="wrapper" 

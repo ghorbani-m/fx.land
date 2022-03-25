@@ -123,10 +123,10 @@
 </script>
 
 <b>scrolling {scrolling}</b>
-<svelte:window on:scroll={goToNextSection} />
+<svelte:window on:scroll|nonpassive={goToNextSection} />
 <section
 	on:mousewheel={mouseWheelEvent}
-	on:touchmove|passive={ontouchmoveEvent}
+	on:touchmove|nonpassive={ontouchmoveEvent}
 	bind:clientHeight={introHeight}
 	bind:this={introSection}
 >
