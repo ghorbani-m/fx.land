@@ -163,7 +163,7 @@ on:touchmove|nonpassive={mouseWheelEvent} -->
 						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt="" />
 					</picture>
 				</div>
-			{:else}
+			<!-- {:else}
 				<div class="frame frame_{frame}">
 					<picture>
 						<source
@@ -178,7 +178,7 @@ on:touchmove|nonpassive={mouseWheelEvent} -->
 						/>
 						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt="" />
 					</picture>
-				</div>
+				</div> -->
 			{/if}
 		{/each}
 	</div>

@@ -100,7 +100,7 @@
 								<img src={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'} alt="" />
 							</picture>
 						</div>
-					{:else}
+					<!-- {:else}
 						<div class="frame frame_{frame}">
 							<picture>
 								<source
@@ -113,7 +113,7 @@
 								/>
 								<img src={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'} alt="" />
 							</picture>
-						</div>
+						</div> -->
 					{/if}
 				{/each}
 			</div>

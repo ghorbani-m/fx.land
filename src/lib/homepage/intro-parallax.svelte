@@ -70,9 +70,9 @@
 <svelte:head>
 	{#each frames as frame, index}
 		{#if isMobile == true}
-			<link rel="preload" as="image" href={assets + '/frames/intro/mobile/frame_' + frame + '.jpeg'} type="image/jpeg" media="(max-width: 720px)">
+			<link rel="preload" as="image" href={assets + '/frames/intro/mobile/frame_' + frame + '.webp'} type="image/webp" media="(max-width: 720px)">
 		{:else}
-			<link rel="preload" as="image" href={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} type="image/jpeg" media="(min-width: 721px)">
+			<link rel="preload" as="image" href={assets + '/frames/intro/desktop/frame_' + frame + '.webp'} type="image/webp" media="(min-width: 721px)">
 		{/if}
 	{/each}
 </svelte:head>
@@ -86,18 +86,18 @@
 					<picture>
 						<source
 							media="(min-width:721px)"
-							srcset={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'}
-							type="image/jpeg" width="1920" height="1080"
+							srcset={assets + '/frames/intro/desktop/frame_' + frame + '.webp'}
+							type="image/webp" width="1920" height="1080"
 						/>
 						<source
 							media="(max-width:720px)"
-							srcset={assets + '/frames/intro/mobile/frame_' + frame + '.jpeg'}
-							type="image/jpeg" width="720" height="1080"
+							srcset={assets + '/frames/intro/mobile/frame_' + frame + '.webp'}
+							type="image/webp" width="720" height="1080"
 						/>
 						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
 					</picture>
 				</div>
-			{:else} 
+			<!-- {:else} 
 				<div class="frame frame_{frame}">
 					<picture>
 						<source
@@ -112,7 +112,7 @@
 						/>
 						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
 					</picture>
-				</div>
+				</div> -->
 			{/if}
 		{/each}
 		<div class="frame frame_{frames.length+1}">

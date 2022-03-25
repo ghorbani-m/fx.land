@@ -31,7 +31,7 @@
 		none: { duration: 0, delay: 0 }
 	};
 	let src = assets + `videos/preorder.mp4`,
-		poster = assets + `images/home/preorder-poster.jpg`,
+		poster = assets + `images/home/preorder-poster.webp`,
 		browserSupportText = 'Your browser does not support the video element.',
 		frames = [],
 		currentFrame = 0,
@@ -217,7 +217,7 @@
 									/>
 								</picture>
 							</div>
-						{:else}
+						<!-- {:else}
 							<div class="frame frame_{frame}">
 								<picture>
 									<source
@@ -233,7 +233,7 @@
 										class="lazy"
 									/>
 								</picture>
-							</div>
+							</div> -->
 						{/if}
 					{/each}
 				</div>

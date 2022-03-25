@@ -6,6 +6,13 @@
     export let blogData;
     import 'swiper/css/navigation';
     import 'swiper/css/effect-cards';
+
+    setTimeout(function(){
+        document.querySelectorAll('.news-item').forEach(function(item, i){
+            var img = item.getElementsByTagName("img")[0];
+            img.src = img.getAttribute("data-src");
+        });
+    }, 2000);
 </script>
 
 {#if blogData.ready == true}

@@ -33,7 +33,7 @@
 	const image = {
 		src: {
 			desktop: assets + 'images/home/hero-image-desktop.webp',
-			mobile: assets + 'images/home/hero-image-desktop.webp'
+			mobile: assets + 'images/home/hero-image-desktop-small.webp'
 		},
 		alt: "Functionland's Blockchain-Attached Storage creates a sustainable ecosystem for app developers to create high-quality, free-forever applications which keep users' data private",
 		options: {

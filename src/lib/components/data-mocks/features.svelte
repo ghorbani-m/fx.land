@@ -20,7 +20,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/home/plug-n-play.webp',
+							src: assets + 'images/home/plug-n-play-small.webp',
 							width: 387,
 							height: 229
 						},
@@ -86,7 +86,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/2.webp',
+							src: assets + 'images/photos-app/photos/2-small.webp',
 							width: 247,
 							height: 192
 						},
@@ -101,7 +101,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/19.webp',
+							src: assets + 'images/photos-app/photos/19-small.webp',
 							width: 360,
 							height: 279
 						},
@@ -116,7 +116,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/4.webp',
+							src: assets + 'images/photos-app/photos/4-small.webp',
 							width: 139,
 							height: 293
 						},
@@ -131,7 +131,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/6.webp',
+							src: assets + 'images/photos-app/photos/6-small.webp',
 							width: 180,
 							height: 245
 						},
@@ -146,7 +146,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/5.webp',
+							src: assets + 'images/photos-app/photos/5-small.webp',
 							width: 265,
 							height: 229
 						},
@@ -161,7 +161,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/8.webp',
+							src: assets + 'images/photos-app/photos/8-small.webp',
 							width: 265,
 							height: 229
 						},
@@ -176,7 +176,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/24.webp',
+							src: assets + 'images/photos-app/photos/24-small.webp',
 							width: 265,
 							height: 229
 						},
@@ -191,7 +191,7 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/photos/27.webp',
+							src: assets + 'images/photos-app/photos/27-small.webp',
 							width: 265,
 							height: 229
 						},

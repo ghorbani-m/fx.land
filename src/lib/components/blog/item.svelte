@@ -14,9 +14,9 @@
 	// console.log(post);
 </script>
 
-<article>
+<article class="news-item">
 	<a href={post.url} target="_blank">
-		<img src={post.feature_image} alt={title} loading="lazy" decoding="async" />
+		<img data-src={post.feature_image} alt={title} loading="lazy" decoding="async" />
 		<div>
 			<em>{title}</em>
 			<time>{dateFormatted}</time>
@@ -43,6 +43,7 @@
 		display: block;
 		overflow: hidden;
 		color: white;
+		background-color:#000;
 	}
 	a:after {
 		content: '';
