@@ -123,14 +123,14 @@
 	});
 </script>
 
-<!-- <svelte:head>
+<svelte:head>
 	{#if preorder.inview}
 		{#each frames as frame, index}
 			<link
 				rel="preload"
 				as="image"
-				href={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-				type="image/jpeg"
+				href={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+				type="image/webp"
 			/>
 		{/each}
 	{:else}
@@ -139,13 +139,13 @@
 				<link
 					rel="preload"
 					as="image"
-					href={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-					type="image/jpeg"
+					href={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+					type="image/webp"
 				/>
 			{/if}
 		{/each}
 	{/if}
-</svelte:head> -->
+</svelte:head>
 <svelte:window
 	on:mousemove={preorder.inview && $innerWidth >= 960 ? throttle(handleMousemove, 400) : ''}
 />
