@@ -20,7 +20,7 @@
 	};
 </script>
 <svelte:window bind:scrollY={scrollY} />
-<div class="slogan-wrapper" style="opacity: {1 - Math.max(0, scrollY / 40)}">
+<div class="slogan-wrapper" style="opacity: {isNaN(1 - Math.max(0, scrollY / 40)) ? 0 : (1 - Math.max(0, scrollY / 40))}">
     <h1 class="slogan">
         {#if showSlogan}
             <span
