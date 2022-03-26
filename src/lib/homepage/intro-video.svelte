@@ -123,10 +123,10 @@
 </script>
 
 <b>scrolling {scrolling}</b>
-<svelte:window on:scroll={goToNextSection} />
+<svelte:window on:scroll|nonpassive={goToNextSection} />
 <section
-	on:mousewheel={mouseWheelEvent}
-	on:touchmove={ontouchmoveEvent}
+	on:mousewheel|nonpassive={mouseWheelEvent}
+	on:touchmove|nonpassive={ontouchmoveEvent}
 	bind:clientHeight={introHeight}
 	bind:this={introSection}
 >
@@ -154,7 +154,7 @@
 
 <style>
 	p {
-		font-family: var(--roboto);
+		font-family: var(--roboto), Arial, Helvetica, sans-serif;
 		font-size: var(--slogan-font-size);
 		font-weight: var(--slogan-font-weight);
 		line-height: var(--slogan-line-height);

@@ -1,8 +1,8 @@
-@font-face {
+* {
   font-display: swap;
 }
 html {
-	font-family: var(--montserrat);
+	font-family: var(--montserrat), Arial, Helvetica, sans-serif;
 	font-size: var(--normal-f-size);
 	/* overflow: hidden;
 	overflow-y: scroll; */

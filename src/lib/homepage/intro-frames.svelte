@@ -163,7 +163,7 @@ on:touchmove|nonpassive={mouseWheelEvent} -->
 						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt="" />
 					</picture>
 				</div>
-			{:else}
+			<!-- {:else}
 				<div class="frame frame_{frame}">
 					<picture>
 						<source
@@ -178,7 +178,7 @@ on:touchmove|nonpassive={mouseWheelEvent} -->
 						/>
 						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt="" />
 					</picture>
-				</div>
+				</div> -->
 			{/if}
 		{/each}
 	</div>
@@ -310,7 +310,7 @@ on:touchmove|nonpassive={mouseWheelEvent} -->
 	h1 {
 		color: var(--actionColor);
 		pointer-events: none;
-		font-family: var(--roboto);
+		font-family: var(--roboto), Arial, Helvetica, sans-serif;
 		font-size: var(--slogan-font-size);
 		font-weight: var(--slogan-font-weight);
 		line-height: var(--slogan-line-height);

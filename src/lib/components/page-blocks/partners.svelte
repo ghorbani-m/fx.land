@@ -15,13 +15,13 @@
 
 <style>
 	section {
-		font-family: var(--inter);
+		font-family: var(--inter), Arial, Helvetica, sans-serif;
 		padding: 3rem 0 5rem;
 		background: var(--bkg-ac);
 		font-display: swap;
 	}
 	.heading {
-		font-family: var(--inter);
+		font-family: var(--inter), Arial, Helvetica, sans-serif;
 		padding: 80px 0;
 		text-align: center;
 		font-display: swap;

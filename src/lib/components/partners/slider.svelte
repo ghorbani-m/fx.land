@@ -26,6 +26,7 @@
 								loading="lazy"
 								decoding="async"
 								class="visible"
+								width="120"
 							/>
 						</picture>
 						<img src={item.main} alt={item.title} class="colored" loading="lazy" decoding="async" />

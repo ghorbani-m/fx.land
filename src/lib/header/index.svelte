@@ -51,7 +51,7 @@
 				<Logo type="default" />
 			</a>
 			<button on:click={menuToggleClickAction} class="toggle-menu">
-				<img src={menuIcon} alt="Menu" />
+				<img src={menuIcon} alt="Menu" height="26" width="26"/>
 			</button>
 			<!-- {#if $media.mobile}
             {/if} -->

@@ -20,7 +20,7 @@
 	};
 </script>
 <svelte:window bind:scrollY={scrollY} />
-<div class="slogan-wrapper" style="opacity: {1 - Math.max(0, scrollY / 40)}">
+<div class="slogan-wrapper" style="opacity: {isNaN(1 - Math.max(0, scrollY / 40)) ? 0 : (1 - Math.max(0, scrollY / 40))}">
     <h1 class="slogan">
         {#if showSlogan}
             <span
@@ -73,7 +73,7 @@
 		letter-spacing: var(--slogan-letter-spacing);
 		text-align: center;
 		max-width: var(--slogan-max-width);
-		font-family: var(--roboto);
+		font-family: var(--roboto), Arial, Helvetica, sans-serif;
 		margin: 0 auto;
 		word-break: break-word;
 		position: relative;
