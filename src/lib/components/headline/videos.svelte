@@ -115,7 +115,6 @@
 						</FadeIn>
 					{/if}
 				{/each}
-			}
 			{:else}
 				<div class="earn-crypto" style="line-height:0;">
 					<img src="/images/home/own-your-data.webp" alt="" width="100%"/>
