@@ -197,8 +197,8 @@
 						{browserSupportText}
 					</video>
 				{/if} -->
-				<div>
-					<img src="{assets + '/images/home/earn-crypto.webp'}" alt="" width="100%"/>
+				<div style="position: absolute;top: 0;right: 0;left: 0;bottom: 0;">
+					<img src="{assets + '/images/home/preorder-poster.webp'}" alt="Pre-order" style="height: 100%;object-fit: cover;"/>
 				</div>
 			{:else}
 				<div class="parallax-bg">
@@ -412,6 +412,13 @@
 	@media (max-width: 959px) {
 		.container {
 			padding: 0;
+		}
+
+		.actionWrapper > p {
+			padding:0 10px;
+			text-align:center;
+			font-size:18px;
+			line-height: 1.25;
 		}
 	}
 </style>

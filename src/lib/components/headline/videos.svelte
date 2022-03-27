@@ -71,15 +71,22 @@
         class:animateFromBottom={observer.scrollDirection === 'down' && data.ref === 'customizable'}
         class:animateFromTop={observer.scrollDirection !== 'down' && data.ref === 'customizable'}>
 		{#if data.ref === 'earn-crypto'}
-			<FadeIn inview={observer} delay={1.2} inheritbg={true}>
-				<video src={videos[1].src} type={videos[1].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main desktop-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
-					<source src={videos[0].src} type={videos[0].type} decoding="async" media="(max-width: 959px)"/>
-					{browserSupportText}
-				</video>
-				<video src={videos[0].src} type={videos[0].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main mobile-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
-					{browserSupportText}
-				</video>
-			</FadeIn>
+			{#if $innerWidth > 960}
+				<FadeIn inview={observer} delay={1.2} inheritbg={true}>
+					<video src={videos[1].src} type={videos[1].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main desktop-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
+						<source src={videos[0].src} type={videos[0].type} decoding="async" media="(max-width: 959px)"/>
+						{browserSupportText}
+					</video>
+					<video src={videos[0].src} type={videos[0].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main mobile-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
+						{browserSupportText}
+					</video>
+				</FadeIn>
+			}
+			{:else}
+				<div class="earn-crypto" style="line-height:0;">
+					<img src="/images/home/earn-crypto.webp" alt="" width="100%"/>
+				</div>
+			{/if}
 		{:else}
 			{#each videos as video}
 				{#if video.scheme !== undefined}
@@ -144,8 +151,7 @@
 		bottom: 0;
 		width: 100%;
     	z-index: 0;
-		padding-top: 80%;
-		margin-bottom: -15%;
+		margin: -70px 0 0;
 	}
 	.video-wrapper.earn-crypto:before {
 		content: '';
