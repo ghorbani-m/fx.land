@@ -20,24 +20,26 @@
 			observer.inview = detail.inView;
 			observer.scrollDirection = detail.scrollDirection.vertical;
 			if (detail.inView == true) {
-				let video = detail.node.querySelector('video')
-				if (data.ref === 'earn-crypto') {
-					if ($innerWidth < 960) {
-						detail.node.querySelector('video.mobile-video')
-					} else {
-						detail.node.querySelector('video.desktop-video')
+				let video = detail.node.querySelector('video');
+				if(video !== null){
+					if (data.ref === 'earn-crypto') {
+						if ($innerWidth < 960) {
+							detail.node.querySelector('video.mobile-video')
+						} else {
+							detail.node.querySelector('video.desktop-video')
+						}
 					}
-				}
-				if (video.paused) {
-					setTimeout(() => {
-						video.play();
-						video.addEventListener('timeupdate', function () {
-						/*if (video.currentTime >= 6) {
-							video.currentTime = 5.5;
+					if (video.paused) {
+						setTimeout(() => {
 							video.play();
-						}*/
-						}, false);
-					}, 600);
+							video.addEventListener('timeupdate', function () {
+							/*if (video.currentTime >= 6) {
+								video.currentTime = 5.5;
+								video.play();
+							}*/
+							}, false);
+						}, 600);
+					}
 				}
 			}
 		},
@@ -52,8 +54,10 @@
 	const playWithDelay = event => {
 		setTimeout(() => {
 			const video = document.getElementById('encryption');
-			video.playbackRate = 2.5;
-			event.target.play();
+			if(video !== null){
+				video.playbackRate = 2.5;
+				event.target.play();
+			}
 		}, 10);
 	}
 	let custCurrentTime, custDuration
