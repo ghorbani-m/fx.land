@@ -87,6 +87,38 @@
 					<img src="/images/home/earn-crypto.webp" alt="" width="100%"/>
 				</div>
 			{/if}
+
+		{:else if data.ref === 'own-your-data'}
+
+			{#if $innerWidth > 960}
+			
+				{#each videos as video}
+					{#if video.scheme !== undefined}
+						{#if colorScheme === video.scheme}
+							<FadeIn inview={observer} delay={0.1} inheritbg={true}>
+								<video id="encryption"
+									playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}>
+									<source src={video.src} type={video.type} />
+									{browserSupportText}
+								</video>
+							</FadeIn>
+						{/if}
+					{:else}
+						<FadeIn inview={observer} delay={.6} inheritbg={true}>
+							<video
+								playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}>
+								<source src={video.src} type={video.type} />
+								{browserSupportText}
+							</video>
+						</FadeIn>
+					{/if}
+				{/each}
+			}
+			{:else}
+				<div class="earn-crypto" style="line-height:0;">
+					<img src="/images/home/own-your-data.webp" alt="" width="100%"/>
+				</div>
+			{/if}
 		{:else}
 			{#each videos as video}
 				{#if video.scheme !== undefined}
