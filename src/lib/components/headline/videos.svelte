@@ -85,14 +85,12 @@
 						{browserSupportText}
 					</video>
 				</FadeIn>
-			}
 			{:else}
 				<div class="earn-crypto" style="line-height:0;">
 					<img src="/images/home/earn-crypto.webp" alt="" width="100%"/>
 				</div>
 			{/if}
-
-		{:else if data.ref === 'own-your-data'}
+		{:else if data.ref == 'own-your-data'}
 
 			{#if $innerWidth > 960}
 			

@@ -63,13 +63,23 @@
 				<h2 class="hero" use:inview={title.options} on:change={title.change}>
 					{#if title.inview}
 						<span class="one-liner">
-							<span class="bold">Box </span>
-							<span>by</span>
-							<span class="teal-text">Functionland </span>
+							<span class="bold" in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[0] : fadeIn.none}>
+								Box
+							</span>
+							<span in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[1] : fadeIn.none}>
+								by
+							</span>
+							<span class="teal-text" in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
+								Functionland
+							</span>
 						</span>
 						<span class="one-liner">
-							<span>The first</span>
-							<span>Blockchain-Attached Storage solution</span>
+							<span in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[3] : fadeIn.none}>
+								The first
+							</span>
+							<span in:fade={title.scrollDirection !== 'down' ? fadeIn.reveal[4] : fadeIn.none}>
+								Blockchain-Attached Storage solution
+							</span>
 						</span>
 					{:else}
 						<span class="one-liner hidden">
