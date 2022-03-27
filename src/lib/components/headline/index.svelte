@@ -21,18 +21,16 @@
 </script>
 
 <div class={`wrapper ${titled ? 'titled' : ''}`} use:inview={observer.options} on:change={observer.change}>
-	<FadeIn inview={observer} delay={(index+1) * .3} fh={true}>
-		<div
-			class={`item ${titled ? 'titled' : ''}`}>
-			<h2>{item.intro_title}</h2>
-			<p>{@html item.intro_desc}</p>
-			<!-- <button use:scrollTo={item.ref} class="btn btn-cta">{item.cta_text}</button> -->
-			{#if item.show_cta == true}
-				<button use:scrollto={`#${item.ref}`} class="btn btn-cta">{item.cta_text}</button>
-			{/if}
-			<div class="dark-bg"></div>
-		</div>
-	</FadeIn>
+	<div
+		class={`item ${titled ? 'titled' : ''}`}>
+		<h2>{item.intro_title}</h2>
+		<p>{@html item.intro_desc}</p>
+		<!-- <button use:scrollTo={item.ref} class="btn btn-cta">{item.cta_text}</button> -->
+		{#if item.show_cta == true}
+			<button use:scrollto={`#${item.ref}`} class="btn btn-cta">{item.cta_text}</button>
+		{/if}
+		<div class="dark-bg"></div>
+	</div>
 </div>
 
 <style>

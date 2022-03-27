@@ -32,40 +32,26 @@
 
 {#if !isMobile}
     {#if item.ref == 'plug-n-play' || item.ref == 'customizable'}
-        <h3 use:inview={heading.options} on:change={heading.change}
-            class={item.ref}>
-			<FadeIn inview={heading} >
-				{@html item.main_title}
-			</FadeIn>
+        <h3 use:inview={heading.options} on:change={heading.change} class={item.ref}>
+			{@html item.main_title}
         </h3>
-        <p use:inview={paragraph.options} on:change={paragraph.change}
-            class={item.ref}>
-			<FadeIn inview={paragraph}>
-				{@html item.main_desc}
-			</FadeIn>
+        <p use:inview={paragraph.options} on:change={paragraph.change} class={item.ref}>
+			{@html item.main_desc}
         </p>
     {:else}
         <h3 use:inview={heading.options} on:change={heading.change} class={item.ref}>
-			<FadeIn inview={heading}>
-				{@html item.main_title}
-			</FadeIn>
+			{@html item.main_title}
         </h3>
         <p use:inview={paragraph.options} on:change={paragraph.change} class={item.ref}>
-			<FadeIn inview={paragraph}>
-				{@html item.main_desc}
-			</FadeIn>
+			{@html item.main_desc}
         </p>
     {/if}
 {:else}
     <h3 use:inview={heading.options} on:change={heading.change} class={item.ref}>
-		<FadeIn inview={heading}>
-			{@html item.main_title}
-		</FadeIn>
+		{@html item.main_title}
     </h3>
     <p use:inview={paragraph.options} on:change={paragraph.change} class={item.ref}>
-		<FadeIn inview={paragraph}>
-			{@html item.main_desc}
-		</FadeIn>
+		{@html item.main_desc}
     </p>
 {/if}
 

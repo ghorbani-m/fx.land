@@ -1,6 +1,5 @@
 <script>
 	import Headline from '$lib/components/headline/index.svelte';
-	import FadeIn from '$lib/components/FadeIn.svelte';
 	import { innerWidth } from 'svelte-window-stores/viewport';
 	import { inview } from 'svelte-inview';
 	const section = {
@@ -47,22 +46,18 @@
 				<div class="pre-section">
 					{#if presection.title.length > 0}
 						<h3>
-							<FadeIn inview={section}>
-								{@html presection.title}
-							</FadeIn>
+							{@html presection.title}
 						</h3>
 					{/if}
 					{#if presection.desc.length > 0}
 						<p>
-							<FadeIn inview={section}>
-								{@html presection.desc}
-							</FadeIn>
+							{@html presection.desc}
 						</p>
 					{/if}
 					{#if presection.image.src.length > 0}
-						<FadeIn inview={section}>
+						<div>
 							<img src={presection.image.src} alt={presection.image.alt} type={presection.image.type} loading="lazy" />
-						</FadeIn>
+						</div>
 					{/if}
 				</div>
 			{/if}
