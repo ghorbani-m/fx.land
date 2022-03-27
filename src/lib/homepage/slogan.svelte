@@ -1,6 +1,7 @@
 <script>
 	import { onMount } from 'svelte';
 	import { fade } from 'svelte/transition';
+	import { innerWidth } from 'svelte-window-stores/viewport';
 	let scrollY, showSlogan = false;
 	onMount(() => {
 		showSlogan = true;
@@ -20,31 +21,35 @@
 	};
 </script>
 <svelte:window bind:scrollY={scrollY} />
-<div class="slogan-wrapper" style="opacity: {isNaN(1 - Math.max(0, scrollY / 40)) ? 0 : (1 - Math.max(0, scrollY / 40))}">
-    <h1 class="slogan">
-        {#if showSlogan}
-            <span
-                in:fade={ fadeIn.reveal[3] }
-            >A Private, </span>
-            <span
-                in:fade={ fadeIn.reveal[4] }
-            >Payless, </span>
-            <span class='l-one-liner'>
-                <span class='m-one-liner'
-                    in:fade={ fadeIn.reveal[5] }
-                >Cloud Storage </span>
-                <span
-                    in:fade={ fadeIn.reveal[6] }
-                >Alternative</span>
-            </span>
-        {:else}
-            <span class='hidden'>A Private, </span>
-            <span class='hidden'>Payless, </span>
-            <span class='hidden'>Cloud Storage </span>
-            <span class='hidden'>Alternative</span>
-        {/if}
-    </h1>
-</div>
+{#if $innerWidth > 960}
+	<div class="slogan-wrapper" style="opacity: {isNaN(1 - Math.max(0, scrollY / 40)) ? 0 : (1 - Math.max(0, scrollY / 40))}">
+		<h1 class="slogan">
+			{#if showSlogan}
+				<span in:fade={ fadeIn.reveal[3] }>A Private, </span>
+				<span in:fade={ fadeIn.reveal[4] }>Payless, </span>
+				<span class='l-one-liner'>
+					<span class='m-one-liner' in:fade={ fadeIn.reveal[5] }>Cloud Storage </span>
+					<span in:fade={ fadeIn.reveal[6] }>Alternative</span>
+				</span>
+			{:else}
+				<span class='hidden'>A Private, </span>
+				<span class='hidden'>Payless, </span>
+				<span class='hidden'>Cloud Storage </span>
+				<span class='hidden'>Alternative</span>
+			{/if}
+		</h1>
+	</div>
+{:else}
+	<div class="slogan-wrapper mobile">
+		<h1 class="slogan">
+			<span>A Private, </span>
+			<span>Payless, </span>
+			<span>Cloud Storage </span>
+			<span>Alternative</span>
+		</h1>
+	</div>
+{/if}
+
 <style>
     
 	.slogan-wrapper {
