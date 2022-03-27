@@ -15,16 +15,19 @@
 </script>
 
 {#if photos}
-	<div
-		class={`photos  ${data.ref} ${
-			$innerWidth > 960 && (data.ref != 'design' && data.ref != 'plug-n-play' ? 'de-contain' : '')
-		}`}
-		use:inview={options}
-		on:change={handleChange}>
-		{#each data.photos as photo, index}
-			<Image data={ { photo, position: index, ref: data.ref, parent:{inview: isInView, scrollDirection: scrollDirection} } }/>
-		{/each}
-	</div>
+	{#if $innerWidth < 960 && data.ref == 'apps-without-ads'}
+		<div class="box-photos">
+			<img src="/images/home/box-photos.webp" alt="Box Photos" style="width:100%;">
+		</div>
+	{:else}
+		<div class={`photos  ${data.ref} ${$innerWidth > 960 && (data.ref != 'design' && data.ref != 'plug-n-play' ? 'de-contain' : '')}`}
+			use:inview={options}
+			on:change={handleChange}>
+			{#each data.photos as photo, index}
+				<Image data={ { photo, position: index, ref: data.ref, parent:{inview: isInView, scrollDirection: scrollDirection} } }/>
+			{/each}
+		</div>
+	{/if}
 {/if}
 <style>
 	div.photos:not(.plug-n-play) {
@@ -33,6 +36,7 @@
 		width: 100%;
 		display: block;
 	}
+
 	@media (min-width: 960px) {
 		div.photos:not(.plug-n-play):not(.design) {
 			aspect-ratio: 1529/1198.99;
@@ -59,5 +63,15 @@
 			width: 100%;
 			height: auto;
 		}
+	}
+
+	
+	@media (max-width:960px){
+		.photos.design, .photos.apps-without-ads {
+			display: flex !important;
+			flex-wrap:wrap;
+			aspect-ratio: initial !important;
+		}
+
 	}
 </style>

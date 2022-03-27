@@ -186,7 +186,7 @@
 						{/if}
 					{/each}
 				</div> -->
-				{#if preorder.inview}
+				<!-- {#if preorder.inview}
 					<video autoplay playsinline muted {poster}>
 						<source {src} type="video/mp4" />
 						{browserSupportText}
@@ -196,7 +196,10 @@
 						<source {src} type="video/mp4" />
 						{browserSupportText}
 					</video>
-				{/if}
+				{/if} -->
+				<div style="position: absolute;top: 0;right: 0;left: 0;bottom: 0;">
+					<img src="{assets + '/images/home/preorder-poster.webp'}" alt="Pre-order" style="height: 100%;object-fit: cover;"/>
+				</div>
 			{:else}
 				<div class="parallax-bg">
 					{#each frames as frame, index}
@@ -409,6 +412,13 @@
 	@media (max-width: 959px) {
 		.container {
 			padding: 0;
+		}
+
+		.actionWrapper > p {
+			padding:0 10px;
+			text-align:center;
+			font-size:18px;
+			line-height: 1.25;
 		}
 	}
 </style>

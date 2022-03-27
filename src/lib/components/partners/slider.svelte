@@ -20,16 +20,17 @@
 					<div class="partner">
 						<picture>
 							<source srcset={item.dark} media="(prefers-color-scheme: dark)" />
-							<img
+							<!-- <img
 								src={item.light}
 								alt={item.title}
 								loading="lazy"
 								decoding="async"
 								class="visible"
 								width="120"
-							/>
+							/> -->
+							<img src={item.main} alt={item.title} class="visible" loading="lazy" decoding="async" height="120" width="120"/>
 						</picture>
-						<img src={item.main} alt={item.title} class="colored" loading="lazy" decoding="async" />
+						
 					</div>
 				{/each}
 			</div>
@@ -61,9 +62,6 @@
 		max-height: 100%;
 		max-width: 120px;
 	}
-	img.colored {
-		opacity: 0;
-	}
 	.partner {
 		position: relative;
 		display: grid;
@@ -74,11 +72,18 @@
 		justify-content: center;
 		justify-items: center;
 	}
-	.partner picture,
-	.partner .colored {
-		grid-column: 1/-1;
-		grid-row: 1/-1;
-		transition: opacity 0.4s, transform 0.4s;
+	.partner img {
+		object-fit: contain;
+		object-position: center;
+		transition:all ease 0.4s;
+		-webkit-transition:all ease 0.4s;
+		filter: gray; /* IE6-9 */
+  		-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+	}
+	.partner:hover img {
+		transform: scale(1.1);
+		filter: none;
+  		-webkit-filter: grayscale(0%);
 	}
 	@media (min-width: 960px) {
 		.page {
@@ -86,21 +91,9 @@
 			grid-template-rows: repeat(2, 120px);
 			transition: opacity 0.3s;
 		}
-		.partner:hover picture {
-			opacity: 0;
-			transform: scale(1.1);
-		}
 		.partner:hover {
-			overflow: visible;
-			z-index: 2;
 			background-color: var(--bkg);
 		}
-		.partner:hover .colored {
-			opacity: 1;
-			transform: scale(1.1);
-			background-color: var(--bkg);
-		}
-
 		:global(.swiper-slide:not(.swiper-slide-active) .page) {
 			opacity: 0;
 		}

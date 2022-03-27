@@ -20,24 +20,26 @@
 			observer.inview = detail.inView;
 			observer.scrollDirection = detail.scrollDirection.vertical;
 			if (detail.inView == true) {
-				let video = detail.node.querySelector('video')
-				if (data.ref === 'earn-crypto') {
-					if ($innerWidth < 960) {
-						detail.node.querySelector('video.mobile-video')
-					} else {
-						detail.node.querySelector('video.desktop-video')
+				let video = detail.node.querySelector('video');
+				if(video !== null){
+					if (data.ref === 'earn-crypto') {
+						if ($innerWidth < 960) {
+							detail.node.querySelector('video.mobile-video')
+						} else {
+							detail.node.querySelector('video.desktop-video')
+						}
 					}
-				}
-				if (video.paused) {
-					setTimeout(() => {
-						video.play();
-						video.addEventListener('timeupdate', function () {
-						/*if (video.currentTime >= 6) {
-							video.currentTime = 5.5;
+					if (video.paused) {
+						setTimeout(() => {
 							video.play();
-						}*/
-						}, false);
-					}, 600);
+							video.addEventListener('timeupdate', function () {
+							/*if (video.currentTime >= 6) {
+								video.currentTime = 5.5;
+								video.play();
+							}*/
+							}, false);
+						}, 600);
+					}
 				}
 			}
 		},
@@ -52,8 +54,10 @@
 	const playWithDelay = event => {
 		setTimeout(() => {
 			const video = document.getElementById('encryption');
-			video.playbackRate = 2.5;
-			event.target.play();
+			if(video !== null){
+				video.playbackRate = 2.5;
+				event.target.play();
+			}
 		}, 10);
 	}
 	let custCurrentTime, custDuration
@@ -71,15 +75,51 @@
         class:animateFromBottom={observer.scrollDirection === 'down' && data.ref === 'customizable'}
         class:animateFromTop={observer.scrollDirection !== 'down' && data.ref === 'customizable'}>
 		{#if data.ref === 'earn-crypto'}
-			<FadeIn inview={observer} delay={1.2} inheritbg={true}>
-				<video src={videos[1].src} type={videos[1].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main desktop-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
-					<source src={videos[0].src} type={videos[0].type} decoding="async" media="(max-width: 959px)"/>
-					{browserSupportText}
-				</video>
-				<video src={videos[0].src} type={videos[0].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main mobile-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
-					{browserSupportText}
-				</video>
-			</FadeIn>
+			{#if $innerWidth > 960}
+				<FadeIn inview={observer} delay={1.2} inheritbg={true}>
+					<video src={videos[1].src} type={videos[1].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main desktop-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
+						<source src={videos[0].src} type={videos[0].type} decoding="async" media="(max-width: 959px)"/>
+						{browserSupportText}
+					</video>
+					<video src={videos[0].src} type={videos[0].type} decoding="async" playsinline muted class={`${data.ref} ${data.ref}-main mobile-video`} on:click={playVideo} on:loadedmetadata={playWithDelay}>
+						{browserSupportText}
+					</video>
+				</FadeIn>
+			{:else}
+				<div class="earn-crypto" style="line-height:0;">
+					<img src="/images/home/earn-crypto.webp" alt="" width="100%"/>
+				</div>
+			{/if}
+		{:else if data.ref == 'own-your-data'}
+
+			{#if $innerWidth > 960}
+			
+				{#each videos as video}
+					{#if video.scheme !== undefined}
+						{#if colorScheme === video.scheme}
+							<FadeIn inview={observer} delay={0.1} inheritbg={true}>
+								<video id="encryption"
+									playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}>
+									<source src={video.src} type={video.type} />
+									{browserSupportText}
+								</video>
+							</FadeIn>
+						{/if}
+					{:else}
+						<FadeIn inview={observer} delay={.6} inheritbg={true}>
+							<video
+								playsinline muted class={`${data.ref} `} decoding="async" on:click={playVideo} on:loadedmetadata={playWithDelay}>
+								<source src={video.src} type={video.type} />
+								{browserSupportText}
+							</video>
+						</FadeIn>
+					{/if}
+				{/each}
+			{:else}
+				<div class="earn-crypto" style="line-height:0;">
+					<img src="/images/home/own-your-data.webp" alt="" width="100%"/>
+				</div>
+			{/if}
 		{:else}
 			{#each videos as video}
 				{#if video.scheme !== undefined}
@@ -144,8 +184,7 @@
 		bottom: 0;
 		width: 100%;
     	z-index: 0;
-		padding-top: 80%;
-		margin-bottom: -15%;
+		margin: -70px 0 0;
 	}
 	.video-wrapper.earn-crypto:before {
 		content: '';
