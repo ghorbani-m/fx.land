@@ -186,7 +186,7 @@
 						{/if}
 					{/each}
 				</div> -->
-				{#if preorder.inview}
+				<!-- {#if preorder.inview}
 					<video autoplay playsinline muted {poster}>
 						<source {src} type="video/mp4" />
 						{browserSupportText}
@@ -196,7 +196,10 @@
 						<source {src} type="video/mp4" />
 						{browserSupportText}
 					</video>
-				{/if}
+				{/if} -->
+				<div>
+					<img src="{assets + '/images/home/earn-crypto.webp'}" alt="" width="100%"/>
+				</div>
 			{:else}
 				<div class="parallax-bg">
 					{#each frames as frame, index}
