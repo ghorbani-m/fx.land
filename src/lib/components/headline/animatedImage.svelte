@@ -217,6 +217,34 @@
 		z-index: 0;
 	}
 
+	@media (max-width:960px){
+		.design.image-box {
+			width: 50% !important;
+			height: 130px;
+			padding:5px;
+			position: static !important;
+			aspect-ratio: 1 !important;
+		}
+		.design.image-box img {
+			height: 120px !important;
+			object-fit: cover !important;
+			animation:0;
+		}
+
+		.image-box.apps-without-ads {
+			width:50% !important;
+			position:static !important;
+			aspect-ratio:auto !important;
+			line-height:0;
+			padding:5px;
+		}
+
+		.image-box.apps-without-ads video {
+			max-width:100%;
+			border-radius:20px;
+		}
+	}
+
 	@media (min-width: 960px) {
 		div.image-box.design,
 		div.image-box.design:nth-child(1),

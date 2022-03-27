@@ -36,6 +36,7 @@
 		width: 100%;
 		display: block;
 	}
+
 	@media (min-width: 960px) {
 		div.photos:not(.plug-n-play):not(.design) {
 			aspect-ratio: 1529/1198.99;
@@ -62,5 +63,15 @@
 			width: 100%;
 			height: auto;
 		}
+	}
+
+	
+	@media (max-width:960px){
+		.photos.design, .photos.apps-without-ads {
+			display: flex !important;
+			flex-wrap:wrap;
+			aspect-ratio: initial !important;
+		}
+
 	}
 </style>
