@@ -41,12 +41,19 @@
 		</h1>
 	</div>
 {:else}
-	<div class="slogan-wrapper mobile">
+	<div class="slogan-wrapper mobile" style="opacity: {isNaN(1 - Math.max(0, scrollY / 40)) ? 0 : (1 - Math.max(0, scrollY / 40))}">
 		<h1 class="slogan">
-			<span>A Private, </span>
-			<span>Payless, </span>
-			<span>Cloud Storage </span>
-			<span>Alternative</span>
+			{#if showSlogan}
+				<span>A Private, </span>
+				<span>Payless, </span>
+				<span>Cloud Storage </span>
+				<span>Alternative</span>
+			{:else}
+				<span class='hidden'>A Private, </span>
+				<span class='hidden'>Payless, </span>
+				<span class='hidden'>Cloud Storage </span>
+				<span class='hidden'>Alternative</span>
+			{/if}
 		</h1>
 	</div>
 {/if}
