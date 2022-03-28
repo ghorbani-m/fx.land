@@ -80,75 +80,60 @@
 <!-- <b>currentFrame {currentFrame}</b> -->
 <section> 
 	<div class="parallax-container">
-		{#if 1}
-			{#each frames as frame}
-				{#if (isNaN(currentFrame) && frame == 1) || frame === parseInt(currentFrame) }
-					<div class="frame active frame_{frame}">
-						<picture>
-							<source
-								media="(min-width:721px)"
-								srcset={assets + '/frames/intro/desktop/frame_' + frame + '.webp'}
-								type="image/webp" width="1920" height="1080"
-							/>
-							<source
-								media="(max-width:720px)"
-								srcset={assets + '/frames/intro/mobile/frame_' + frame + '.webp'}
-								type="image/webp" width="720" height="1080"
-							/>
-							<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
-						</picture>
-					</div>
-				<!-- {:else} 
-					<div class="frame frame_{frame}">
-						<picture>
-							<source
-								media="(min-width:720px)"
-								srcset={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'}
-								type="image/jpeg" width="1920" height="1080"
-							/>
-							<source
-								media="(max-width:721px)"
-								srcset={assets + '/frames/intro/mobile/frame_' + frame + '.jpeg'}
-								type="image/jpeg" width="720" height="1080"
-							/>
-							<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
-						</picture>
-					</div> -->
-				{:else if parseInt(currentFrame) > totalFrames}
-					<div class="frame active frame_{totalFrames}">
-						<picture>
-							<source
-								media="(min-width:721px)"
-								srcset={assets + '/frames/intro/desktop/frame_' + totalFrames + '.webp'}
-								type="image/webp" width="1920" height="1080"
-							/>
-							<source
-								media="(max-width:720px)"
-								srcset={assets + '/frames/intro/mobile/frame_' + totalFrames + '.webp'}
-								type="image/webp" width="720" height="1080"
-							/>
-							<img src={assets + '/frames/intro/desktop/frame_' + totalFrames + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
-						</picture>
-					</div>
-				{/if}
-			{/each}
-		{:else}
-			<div class="frame active frame_47">
+		{#each frames as frame}
+			{#if (isNaN(currentFrame) && frame == 1) || frame === parseInt(currentFrame) }
+				<div class="frame active frame_{frame}">
+					<picture>
+						<source
+							media="(min-width:721px)"
+							srcset={assets + '/frames/intro/desktop/frame_' + frame + '.webp'}
+							type="image/webp" width="1920" height="1080"
+						/>
+						<source
+							media="(max-width:720px)"
+							srcset={assets + '/frames/intro/mobile/frame_' + frame + '.webp'}
+							type="image/webp" width="720" height="1080"
+						/>
+						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
+					</picture>
+				</div>
+			<!-- {:else} 
+				<div class="frame frame_{frame}">
+					<picture>
+						<source
+							media="(min-width:720px)"
+							srcset={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'}
+							type="image/jpeg" width="1920" height="1080"
+						/>
+						<source
+							media="(max-width:721px)"
+							srcset={assets + '/frames/intro/mobile/frame_' + frame + '.jpeg'}
+							type="image/jpeg" width="720" height="1080"
+						/>
+						<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
+					</picture>
+				</div> -->
+			{/if}
+		{/each}
+
+		{#if parseInt(currentFrame) > totalFrames}
+			<div class="frame active frame_{totalFrames}">
 				<picture>
 					<source
 						media="(min-width:721px)"
-						srcset={assets + '/frames/intro/desktop/frame_47.webp'}
+						srcset={assets + '/frames/intro/desktop/frame_' + totalFrames + '.webp'}
 						type="image/webp" width="1920" height="1080"
 					/>
 					<source
 						media="(max-width:720px)"
-						srcset={assets + '/frames/intro/mobile/frame_47.webp'}
+						srcset={assets + '/frames/intro/mobile/frame_' + totalFrames + '.webp'}
 						type="image/webp" width="720" height="1080"
 					/>
-					<img src={assets + '/frames/intro/desktop/frame_47.jpeg'} alt=""  style="{`--heightVar:calc( 100vh - 60px)`}"/>
+					<img src={assets + '/frames/intro/desktop/frame_' + totalFrames + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
 				</picture>
 			</div>
 		{/if}
+
 		<div class="frame frame_{frames.length+1}">
 		</div>
 	</div>
