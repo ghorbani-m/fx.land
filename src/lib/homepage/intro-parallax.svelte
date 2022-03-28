@@ -11,7 +11,7 @@
 		currentFrame = 1,
 		introDonePlaying = false;
 	$: isMobile = $innerWidth < 960
-	let totalFrames = $innerWidth < 960 ? 66 : 59
+	let totalFrames = $innerWidth < 960 ? 53 : 59
 	$: threshold = isMobile ? 47 : 37;
 	for (let i = 1; i < totalFrames + 1; i++) {
 		frames.push(i);
@@ -114,6 +114,22 @@
 							<img src={assets + '/frames/intro/desktop/frame_' + frame + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
 						</picture>
 					</div> -->
+				{:else if parseInt(currentFrame) > totalFrames}
+					<div class="frame active frame_{totalFrames}">
+						<picture>
+							<source
+								media="(min-width:721px)"
+								srcset={assets + '/frames/intro/desktop/frame_' + totalFrames + '.webp'}
+								type="image/webp" width="1920" height="1080"
+							/>
+							<source
+								media="(max-width:720px)"
+								srcset={assets + '/frames/intro/mobile/frame_' + totalFrames + '.webp'}
+								type="image/webp" width="720" height="1080"
+							/>
+							<img src={assets + '/frames/intro/desktop/frame_' + totalFrames + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
+						</picture>
+					</div>
 				{/if}
 			{/each}
 		{:else}
