@@ -138,7 +138,7 @@
 		</div>
 	</div>
 	<Slogan />
-</section>
+</section> 
 <style>
 	/* b {
 		position: fixed;
