@@ -78,7 +78,7 @@
 </svelte:head>
 <svelte:window bind:scrollY={scrollY} on:scroll|nonpassive={detectScroll}/>
 <!-- <b>currentFrame {currentFrame}</b> -->
-<section>
+<section> 
 	<div class="parallax-container">
 		{#if $innerWidth > 960}
 			{#each frames as frame}
