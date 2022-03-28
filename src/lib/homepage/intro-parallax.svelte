@@ -11,7 +11,7 @@
 		currentFrame = 1,
 		introDonePlaying = false;
 	$: isMobile = $innerWidth < 960
-	let totalFrames = $innerWidth < 960 ? 66 : 59
+	let totalFrames = $innerWidth < 960 ? 53 : 59
 	$: threshold = isMobile ? 47 : 37;
 	for (let i = 1; i < totalFrames + 1; i++) {
 		frames.push(i);
@@ -270,9 +270,16 @@
 		.m-one-liner {
 			display: block;
 		}
-		.parallax-container {
+		/* .parallax-container {
 			position: sticky;
 			margin-bottom: -30vh;
+		} */
+		.parallax-container {
+			height:calc(100vh - 60px);
+		}
+		section {
+			position:relative;
+			top:0;
 		}
 		.frame img {
 			transform: unset;
