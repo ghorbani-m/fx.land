@@ -21,7 +21,7 @@
 		{/each}
 	</ul>
 	<div>
-		© <a sveltekit:prefetch href="/">Functionland</a>, Inc. {yearString}. We love our users!
+		© <a sveltekit:prefetch href="/">Functionland</a>, Inc. {yearString}.
 	</div>
 </div>
 
