@@ -80,7 +80,7 @@
 <!-- <b>currentFrame {currentFrame}</b> -->
 <section> 
 	<div class="parallax-container">
-		{#if $innerWidth > 960}
+		{#if 1}
 			{#each frames as frame}
 				{#if (isNaN(currentFrame) && frame == 1) || frame === parseInt(currentFrame) }
 					<div class="frame active frame_{frame}">
