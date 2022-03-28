@@ -115,6 +115,25 @@
 				</div> -->
 			{/if}
 		{/each}
+
+		{#if parseInt(currentFrame) > totalFrames}
+			<div class="frame active frame_{totalFrames}">
+				<picture>
+					<source
+						media="(min-width:721px)"
+						srcset={assets + '/frames/intro/desktop/frame_' + totalFrames + '.webp'}
+						type="image/webp" width="1920" height="1080"
+					/>
+					<source
+						media="(max-width:720px)"
+						srcset={assets + '/frames/intro/mobile/frame_' + totalFrames + '.webp'}
+						type="image/webp" width="720" height="1080"
+					/>
+					<img src={assets + '/frames/intro/desktop/frame_' + totalFrames + '.jpeg'} alt=""  style="{`--heightVar:${heightVar}`}"/>
+				</picture>
+			</div>
+		{/if}
+
 		<div class="frame frame_{frames.length+1}">
 		</div>
 	</div>
