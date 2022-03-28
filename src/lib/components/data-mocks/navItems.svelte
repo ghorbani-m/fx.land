@@ -111,7 +111,7 @@
 		title: 'Resources',
 		items: [
 			{
-				path: 'https://bit.ly/FulaWP',
+				path: 'https://fx.land/FulaWP',
 				text: 'Whitepaper',
 				type: 'link',
 				internal: false
