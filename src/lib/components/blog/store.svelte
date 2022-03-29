@@ -1,5 +1,6 @@
 <script context="module">
 	import { readable } from 'svelte/store';
+	import parse from 'rss-to-json';
 	const targetUrl = 'https://functionland.ghost.io/ghost/api/v4/content/posts/?limit=9&key=8fb27f029cb68e715fb6be3f53';
 
 	export function initialValue() {
@@ -23,7 +24,6 @@
 	}
 
 	async function fetchBlogData(data, set) {
-		
 		try {
 			const response = await fetch(targetUrl);
 			const result = await response.json();
