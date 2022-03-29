@@ -23,8 +23,11 @@ var ml_account = ml('accounts', '3699446', 'b2k9f5k0b8', 'load');
 	import Header from '$lib/header/index.svelte';
 	import '../styles/app.css';
 	import '../styles/animations.css';
+	import LazyLoad from '@dimfeld/svelte-lazyload';
 </script>
 
 <Header />
 <slot />
-<Footer />
+<LazyLoad on:visible={() => {}}>
+	<Footer />
+</LazyLoad>
