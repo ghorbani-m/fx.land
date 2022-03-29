@@ -65,12 +65,6 @@
 		</LazyLoad>
 	{/if}
 	</MediaQuery>
-
-	
-	
-	
-		
-	
 </main>
 
 <style>
