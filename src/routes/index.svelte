@@ -15,7 +15,6 @@
 	import MouseMove from '$lib/homepage/mouseMove.svelte';
 	import LazyLoadVideos from '$lib/homepage/lazyloadVideos.svelte';
 	import { data as meetBoxData } from '$lib/components/data-mocks/meetBox.svelte';
-	import LazyLoad from '@dimfeld/svelte-lazyload';
 </script>
 
 <svelte:head>
@@ -25,28 +24,13 @@
 	<!-- <Frames /> -->
 	<Parallax />
 	<Hero />
-	<LazyLoad on:visible={() => {}}>
-		<Headlines data={valuesData} presection={meetBoxData}/>
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<Headlines data={featuresData} title="Pros in a nutshell" />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<Preorder />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<News />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<Partners />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<MouseMove />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<LazyLoadVideos />
-	</LazyLoad>
-	
+	<Headlines data={valuesData} presection={meetBoxData}/>
+	<Headlines data={featuresData} title="Pros in a nutshell" />
+	<Preorder />
+	<News />
+	<Partners />
+	<MouseMove />
+	<LazyLoadVideos />
 </main>
 
 <style>
