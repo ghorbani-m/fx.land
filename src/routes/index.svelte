@@ -16,6 +16,7 @@
 	import LazyLoadVideos from '$lib/homepage/lazyloadVideos.svelte';
 	import { data as meetBoxData } from '$lib/components/data-mocks/meetBox.svelte';
 	import LazyLoad from '@dimfeld/svelte-lazyload';
+	import MediaQuery from "./MediaQuery.svelte";
 </script>
 
 <svelte:head>
@@ -23,29 +24,52 @@
 </svelte:head>
 <main>
 	<!-- <Frames /> -->
-	<Parallax />
-	<Hero />
-	<LazyLoad on:visible={() => {}}>
+	<MediaQuery query="(min-width: 1281px)" let:matches>
+	{#if matches}
+		<Parallax />
+		<Hero />
 		<Headlines data={valuesData} presection={meetBoxData}/>
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
 		<Headlines data={featuresData} title="Pros in a nutshell" />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
 		<Preorder />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
 		<News />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
 		<Partners />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
 		<MouseMove />
-	</LazyLoad>
-	<LazyLoad on:visible={() => {}}>
-		<LazyLoadVideos />
-	</LazyLoad>
+		{/if}
+	</MediaQuery>
+
+	<MediaQuery query="(min-width: 481px) and (max-width: 1280px)" let:matches>
+	{#if matches}
+		<Parallax />
+		<Hero />
+		<Headlines data={valuesData} presection={meetBoxData}/>
+		<Headlines data={featuresData} title="Pros in a nutshell" />
+		<Preorder />
+		<News />
+		<Partners />
+		<MouseMove />
+	{/if}
+	</MediaQuery>	
+
+	<MediaQuery query="(max-width: 480px)" let:matches>
+	{#if matches}
+		<Parallax />
+		<Hero />
+		<LazyLoad>
+			<Headlines data={valuesData} presection={meetBoxData}/>
+			<Headlines data={featuresData} title="Pros in a nutshell" />
+			<Preorder />
+			<News />
+			<Partners />
+			<MouseMove />
+			<LazyLoadVideos />
+		</LazyLoad>
+	{/if}
+	</MediaQuery>
+
+	
+	
+	
+		
 	
 </main>
 
