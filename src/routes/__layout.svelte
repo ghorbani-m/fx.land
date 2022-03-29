@@ -28,6 +28,6 @@ var ml_account = ml('accounts', '3699446', 'b2k9f5k0b8', 'load');
 
 <Header />
 <slot />
-<LazyLoad on:visible={() => console.log('footer visible!')}>
+<LazyLoad on:visible={() => }>
 	<Footer />
 </LazyLoad>

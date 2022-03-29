@@ -25,25 +25,25 @@
 	<!-- <Frames /> -->
 	<Parallax />
 	<Hero />
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<Headlines data={valuesData} presection={meetBoxData}/>
 	</LazyLoad>
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<Headlines data={featuresData} title="Pros in a nutshell" />
 	</LazyLoad>
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<Preorder />
 	</LazyLoad>
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<News />
 	</LazyLoad>
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<Partners />
 	</LazyLoad>
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<MouseMove />
 	</LazyLoad>
-	<LazyLoad on:visible={() => console.log('visible!')}>
+	<LazyLoad on:visible={() => {}}>
 		<LazyLoadVideos />
 	</LazyLoad>
 	
