@@ -122,13 +122,13 @@
 					{#if currentFrame > 134}
 						<p in:fade={fadeIn.reveal[0]} out:fade={fadeIn.reveal[0]}>Box is available now!</p>
 						<div class="cta" in:fade={fadeIn.reveal[0]} out:fade={fadeIn.reveal[0]}>
-							<a class="btn btn-cta" sveltekit:prefetch href="/preorder">Pre-order</a>
+							<a class="btn btn-cta" sveltekit:prefetch href="/crowdfunding">Pre-Order</a>
 						</div>
 					{/if}
 				{:else}
 					<p>Box is available now!</p>
 					<div class="cta" >
-						<a class="btn btn-cta" sveltekit:prefetch href="/preorder">Pre-register</a>
+						<a class="btn btn-cta" sveltekit:prefetch href="/crowdfunding">Pre-Order</a>
 					</div>
 				{/if}
 			</div>
