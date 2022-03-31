@@ -33,10 +33,11 @@
 			}
 		],
 		cta: {
-			path: 'https://fx.land/nft/',
-			text: 'Pre-Register',
-			type: 'scroll',
-			refrence: 'preorder'
+			path: 'https://indiegogo.fx.land/',
+			text: 'Pre-Order',
+			type: 'link',
+			refrence: 'preorder',
+			internal: false
 		}
 	};
 	export const copyright_nav = {

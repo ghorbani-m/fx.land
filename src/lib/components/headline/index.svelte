@@ -27,7 +27,7 @@
 		<p>{@html item.intro_desc}</p>
 		<!-- <button use:scrollTo={item.ref} class="btn btn-cta">{item.cta_text}</button> -->
 		{#if item.show_cta == true}
-			<button use:scrollto={`#${item.ref}`} class="btn btn-cta">{item.cta_text}</button>
+			<!-- <a href={`#${item.ref}`} class="btn btn-cta">{item.cta_text}</a> -->
 		{/if}
 		<div class="dark-bg"></div>
 	</div>

@@ -244,13 +244,13 @@
 			<div class="actionWrapper" id="preordercta">
 				
 					<p in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
-						Box is available soon! Pre-register for up to 50% off.
+						Box is available now! Pre-order NOW for up to 50% off.
 					</p>
 					<div
 						class="cta"
 						in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}
 					>
-						<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
+						<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://indiegogo.fx.land/" bind:this={ctaButtonRef}
 							>Pre-Order</a
 						>
 						

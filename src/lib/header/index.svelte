@@ -71,7 +71,7 @@
 				{/each}
 			</ul>
 			<div class="cta">
-				<button on:click={menuCtaClick} class="btn btn-cta">{ctaItem.text}</button>
+				<a href={ctaItem.path} target="_blank" class="btn btn-cta">{ctaItem.text}</a>
 			</div>
 		</nav>
 	</div>
