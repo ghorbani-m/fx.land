@@ -243,12 +243,12 @@
 				{
 					srcset: {
 						small: {
-							src: assets + 'images/photos-app/6-small.jpg',
+							src: assets + 'images/photos-app/9-small.jpg',
 							width: 494,
 							height: 279
 						},
 						large: {
-							src: assets + 'images/photos-app/6.jpg',
+							src: assets + 'images/photos-app/9.jpg',
 							width: 494,
 							height: 279
 						},
@@ -266,6 +266,21 @@
 							src: assets + 'images/photos-app/7.jpg',
 							width: 698,
 							height: 457
+						},
+					},
+					type: 'image/jpg'
+				},
+				{
+					srcset: {
+						small: {
+							src: assets + 'images/photos-app/8-small.jpg',
+							width: 476,
+							height: 288
+						},
+						large: {
+							src: assets + 'images/photos-app/8.jpg',
+							width: 476,
+							height: 288
 						},
 					},
 					type: 'image/jpg'

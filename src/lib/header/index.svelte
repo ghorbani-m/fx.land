@@ -50,6 +50,9 @@
 			>
 				<Logo type="default" />
 			</a>
+			
+			<a href="https://indiegogo.fx.land/" target="_blank" class="btn btn-cta toggle-menu">Pre-Order</a>
+			
 			<button on:click={menuToggleClickAction} class="toggle-menu">
 				<img src={menuIcon} alt="Menu" height="26" width="26"/>
 			</button>

@@ -30,6 +30,18 @@
 				text: 'FULA Protocol',
 				type: 'link',
 				internal: false
+			},
+			{
+				path: 'https://fx.land/FulaWP',
+				text: 'Whitepaper',
+				type: 'link',
+				internal: false
+			},
+			{
+				path: 'https://fx.land/simulation',
+				text: 'Simulation',
+				type: 'link',
+				internal: false
 			}
 		],
 		cta: {
@@ -124,8 +136,8 @@
 				internal: false
 			},
 			{
-				path: 'https://fx.land/mine/',
-				text: 'FULA Protocol',
+				path: 'https://www.youtube.com/watch?v=YlEz3P5j4dc',
+				text: 'Simulation Guide',
 				type: 'link',
 				internal: false
 			}
