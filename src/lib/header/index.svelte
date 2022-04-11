@@ -324,9 +324,9 @@
 			text-align: revert;
 		}
 		.btn-cta {
-			opacity: 0;
+			/*opacity: 0;
 			transform: translateX(-100%);
-			transition: 0.35s opacity 0s ease-in-out, 0.35s transform 0s ease-in-out;
+			transition: 0.35s opacity 0s ease-in-out, 0.35s transform 0s ease-in-out;*/
 		}
 		.open .btn-cta {
 			opacity: 1;
