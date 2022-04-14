@@ -81,11 +81,11 @@
 					linkedin: 'https://www.linkedin.com/in/ehsan-emami-0005bb6/'
 				},
 				{
-					name: 'Aaron-Surty',
+					name: 'Masih Derkani',
 					position: 'Software',
-					image: assets + 'images/team/Aaron-Surty.jpg',
+					image: assets + 'images/team/Masih-Derkani.jpg',
 					artwork: assets + 'images/team/Aaron-Surty-artwork.png',
-					linkedin: 'https://www.linkedin.com/in/aaron-surty/'
+					linkedin: 'https://www.linkedin.com/in/masih-h-derkani-13a883184/'
 				},
 				{
 					name: 'Jamshid Saidov',
