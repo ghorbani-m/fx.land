@@ -13,10 +13,13 @@
 	// it so that it gets served as a static asset in prod
 	export const prerender = true;
 </script>
-
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <svelte:head>
-	<title>Support</title>
+	<title>Calendar</title>
 </svelte:head>
 <div class="content">
-	<h1>FXLAND Support</h1>
+	<h1>Functionland Calendar</h1>
+	<!-- Calendly inline widget begin -->
+	<div class="calendly-inline-widget" data-url="https://calendly.com/functionland" style="min-width:320px;height:630px;"></div>
+	<!-- Calendly inline widget end -->
 </div>
