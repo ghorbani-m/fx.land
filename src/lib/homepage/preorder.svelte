@@ -254,7 +254,7 @@
 			<div class="actionWrapper" id="preordercta">
 				
 					<p in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
-						Box is available now! Pre-order NOW for up to 50% off.
+						Box pre-order is closed now. Subscribe to be notified a soon as it opens.
 					</p>
 					<div
 						class="cta"
