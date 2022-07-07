@@ -2,7 +2,7 @@
 	import Submit from '$lib/components/email/submit.svelte';
 	import MailerLite from '$lib/components/email/mailerLite.svelte';
 	//import Logo from '$lib/components/Logo/index.svelte';
-	const menuIcon = assets + 'images/layout/menu.png';
+	import { assets } from '$app/paths';
 	const logoIconBlack = assets + 'images/fav-pack/logo-horizontal-b.svg';
 	const logoIconWhite = assets + 'images/fav-pack/logo-horizontal-w.svg';
 	import FooterNav from '$lib/components/navs/footer/FooterNav.svelte';
