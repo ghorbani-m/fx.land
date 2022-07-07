@@ -1,3 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="299.36" height="336.21"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 299.36 336.21"><polygon points="0 190.72 57.52 190.72 57.52 336.21 0 285.32 0 190.72" fill="#1a1a1a"></polygon><polygon points="147.51 0 147.51 79.4 204.99 79.4 204.99 62.81 147.51 0" fill="#1a1a1a"></polygon><rect x="89.86" y="217.15" width="119.66" height="39.74" transform="translate(-123.76 175.27) rotate(-45)" fill="#306767"></rect><rect x="129.82" y="177.19" width="39.74" height="119.66" transform="translate(-123.75 175.26) rotate(-45)" fill="#306767"></rect><rect x="57.5" width="90" height="57.49" fill="#383838"></rect><polygon points="0 62.81 0 185.44 0 190.72 57.52 190.72 57.52 132.82 57.52 0.02 0 62.81" fill="#1a1a1a"></polygon><rect y="188.73" width="57.51" height="96.59" fill="#099393"></rect><polygon points="0.02 188.72 81.3 188.72 81.3 137.83 57.5 137.83 0.02 188.72" fill="#306767"></polygon><polygon points="0.02 285.32 81.3 285.32 81.3 336.21 57.52 336.21 0.02 285.32" fill="#306767"></polygon><rect x="241.87" y="188.72" width="57.49" height="96.6" fill="#099393"></rect><polygon points="299.36 285.32 219.96 285.32 219.96 336.21 243.76 336.21 299.36 285.32" fill="#306767"></polygon><polygon points="299.36 188.72 219.96 188.72 219.96 137.83 243.76 137.83 299.36 188.72" fill="#306767"></polygon></svg><style>@media (prefers-color-scheme: light) { :root { filter: none; } }
-@media (prefers-color-scheme: dark) { :root { filter: contrast(1) brightness(1.2); } }
-</style></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   xml:space="preserve"
+   width="547.1333"
+   height="534.01331"
+   viewBox="0 0 547.1333 534.01331"
+   sodipodi:docname="FULA_Logo_GRN.eps"><metadata
+     id="metadata8"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+     id="defs6" /><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="640"
+     inkscape:window-height="480"
+     id="namedview4" /><g
+     id="g10"
+     inkscape:groupmode="layer"
+     inkscape:label="ink_ext_XXXXXX"
+     transform="matrix(1.3333333,0,0,-1.3333333,0,534.01333)"><g
+       id="g12"
+       transform="scale(0.1)"><path
+         d="m 2983.93,3290.39 -508.77,610.71 c -50.27,60.34 -124.75,95.24 -203.29,95.24 H 125.297 C 56.0977,3996.34 0,3940.24 0,3871.04 v -694.53 h 2930.59 c 58.86,0 91.02,68.65 53.34,113.88 z M 1118.5,705.941 1627.27,95.2305 C 1677.54,34.8906 1752.02,0 1830.55,0 h 2146.58 c 69.2,0 125.3,56.1016 125.3,125.289 V 819.82 H 1171.84 c -58.86,0 -91.02,-68.652 -53.34,-113.879 z m 1496.82,1919.579 -1137.16,-1.67 c -31.58,-0.05 -57.14,-25.68 -57.09,-57.26 l 1.66,-1137.16 c 0.05,-31.58 25.68,-57.14 57.26,-57.1 l 1137.17,1.67 c 31.57,0.05 57.13,25.68 57.09,57.26 l -1.67,1137.16 c -0.04,31.58 -25.68,57.14 -57.26,57.1 z m 1399.4,668.91 -747.23,692.98 c -35.31,37.01 -97.7,11.97 -97.62,-39.18 l 0.72,-2871.12 c 0.04,-31.27 25.44,-56.6 56.72,-56.55 l 819.08,1.2 c 31.28,0.05 56.6,25.44 56.56,56.72 l 0.52,2012.53 c 0.02,77.2 -32.14,150.92 -88.75,203.42 z M 876.156,2984.51 57.0781,2983.31 C 25.7969,2983.26 0.472656,2957.87 0.519531,2926.59 L 0,914.059 C -0.0195313,836.859 32.1406,763.141 88.7461,710.641 L 835.98,17.6602 c 35.305,-37.0118 97.696,-11.96879 97.622,39.1679 L 932.883,2927.95 c -0.047,31.28 -25.442,56.6 -56.727,56.56"
+         style="fill:#3dbb91;fill-opacity:1;fill-rule:nonzero;stroke:none"
+         id="path14" /></g></g></svg>
