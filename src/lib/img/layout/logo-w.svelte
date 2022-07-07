@@ -5,7 +5,7 @@
 	export let height;
 </script>
 
-<svg {width} {height} viewBox="0 0 157 35" class="logo-white"
+<svg {width} {height} viewBox="0 0 570 126.23" class="logo-white"
 	><path
          d="M 74.7539,1.57813 7.9375,63.5469 C 2.875,68.2422 0,74.8359 0,81.7383 L 0.046875,261.703 c -0.0039062,2.797 2.261715,5.07 5.058595,5.074 l 73.24223,0.106 c 2.7968,0.004 5.0703,-2.258 5.0742,-5.059 L 83.4844,5.08203 c 0.0078,-4.574217 -5.5703,-6.8125 -8.7305,-3.5039"
          style="fill:#3dbb91;fill-opacity:1;fill-rule:nonzero;stroke:none"
