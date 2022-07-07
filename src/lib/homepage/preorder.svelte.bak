@@ -31,7 +31,7 @@
 		none: { duration: 0, delay: 0 }
 	};
 	let src = assets + `videos/preorder.mp4`,
-		poster = assets + `images/home/preorder-poster.jpg`,
+		poster = assets + `images/home/preorder-poster.webp`,
 		browserSupportText = 'Your browser does not support the video element.',
 		frames = [],
 		currentFrame = 0,
@@ -121,6 +121,16 @@
 			}
 		};
 	});
+	
+	<!-- MailerLite Universal -->
+		(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+		var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+		f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+		var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+		_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+		var ml_account = ml('accounts', '3699446', 'b2k9f5k0b8', 'load');
+	<!-- End MailerLite Universal -->
 </script>
 
 <svelte:head>
@@ -129,8 +139,8 @@
 			<link
 				rel="preload"
 				as="image"
-				href={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-				type="image/jpeg"
+				href={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+				type="image/webp"
 			/>
 		{/each}
 	{:else}
@@ -139,8 +149,8 @@
 				<link
 					rel="preload"
 					as="image"
-					href={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-					type="image/jpeg"
+					href={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+					type="image/webp"
 				/>
 			{/if}
 		{/each}
@@ -186,7 +196,7 @@
 						{/if}
 					{/each}
 				</div> -->
-				{#if preorder.inview}
+				<!-- {#if preorder.inview}
 					<video autoplay playsinline muted {poster}>
 						<source {src} type="video/mp4" />
 						{browserSupportText}
@@ -196,7 +206,10 @@
 						<source {src} type="video/mp4" />
 						{browserSupportText}
 					</video>
-				{/if}
+				{/if} -->
+				<div style="position: absolute;top: 0;right: 0;left: 0;bottom: 0;">
+					<img src="{assets + '/images/home/preorder-poster.webp'}" alt="Pre-order" style="height: 100%;object-fit: cover;"/>
+				</div>
 			{:else}
 				<div class="parallax-bg">
 					{#each frames as frame, index}
@@ -204,8 +217,8 @@
 							<div class="frame active frame_{frame}">
 								<picture>
 									<source
-										srcset={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-										type="image/jpeg"
+										srcset={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+										type="image/webp"
 										width="1920"
 										height="1080"
 									/>
@@ -221,8 +234,8 @@
 							<div class="frame frame_{frame}">
 								<picture>
 									<source
-										srcset={assets + '/frames/preorder/pre-order_' + frame + '.jpeg'}
-										type="image/jpeg"
+										srcset={assets + '/frames/preorder/pre-order_' + frame + '.webp'}
+										type="image/webp"
 										width="1920"
 										height="1080"
 									/>
@@ -241,21 +254,17 @@
 			<div class="actionWrapper" id="preordercta">
 				
 					<p in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}>
-						Box is available soon! Pre-register for up to 50% off.
+						Box is available now! Pre-order NOW for up to 50% off.
 					</p>
 					<div
 						class="cta"
 						in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}
 					>
-						<!--<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://fx.land/crowdfunding" bind:this={ctaButtonRef}
-							>Pre-order</a
-						>-->
-						<div bind:this={ctaButtonRef}>
-						<!-- MailerLite Universal -->
-							
-						<!-- End MailerLite Universal -->
-
+						<div class="ml-form-embed" bind:this={ctaButtonRef}
+						  data-account="3699446:b2k9f5k0b8"
+						  data-form="5721990:m8z1r1">
 						</div>
+						
 					</div>
 				
 			</div>
@@ -353,6 +362,13 @@
 	@media (max-width: 959px) {
 		.container {
 			padding: 0;
+		}
+
+		.actionWrapper > p {
+			padding:0 10px;
+			text-align:center;
+			font-size:18px;
+			line-height: 1.25;
 		}
 	}
 </style>

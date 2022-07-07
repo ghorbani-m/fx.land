@@ -121,6 +121,16 @@
 			}
 		};
 	});
+	
+	//MailerLite Universal
+		(function(m,a,i,l,e,r){ m['MailerLiteObject']=e;function f(){
+		var c={ a:arguments,q:[]};var r=this.push(c);return "number"!=typeof r?r:f.bind(c.q);}
+		f.q=f.q||[];m[e]=m[e]||f.bind(f.q);m[e].q=m[e].q||f.q;r=a.createElement(i);
+		var _=a.getElementsByTagName(i)[0];r.async=1;r.src=l+'?v'+(~~(new Date().getTime()/1000000));
+		_.parentNode.insertBefore(r,_);})(window, document, 'script', 'https://static.mailerlite.com/js/universal.js', 'ml');
+
+		var ml_account = ml('accounts', '3699446', 'b2k9f5k0b8', 'load');
+	//End MailerLite Universal
 </script>
 
 <svelte:head>
@@ -250,9 +260,10 @@
 						class="cta"
 						in:fade={preorder.scrollDirection !== 'down' ? fadeIn.reveal[2] : fadeIn.none}
 					>
-						<a target="_blank" class="btn btn-cta" sveltekit:prefetch href="https://indiegogo.fx.land/" bind:this={ctaButtonRef}
-							>Pre-Order</a
-						>
+						<div class="ml-form-embed" bind:this={ctaButtonRef}
+						  data-account="3699446:b2k9f5k0b8"
+						  data-form="5721990:m8z1r1">
+						</div>
 						
 					</div>
 				
