@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte';
 	import { scrollto } from 'svelte-scrollto';
 	import * as animateScroll from 'svelte-scrollto';
-	import Logo from '$lib/components/Logo/index.svelte';
+	//import Logo from '$lib/components/Logo/index.svelte';
 	const menuIcon = assets + 'images/layout/menu.png';
 	const logoIconBlack = assets + 'images/fav-pack/logo-vertical-b.svg';
 	const logoIconWhite = assets + 'images/fav-pack/logo-vertical-w.svg';
