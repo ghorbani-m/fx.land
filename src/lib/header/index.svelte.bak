@@ -6,7 +6,8 @@
 	import * as animateScroll from 'svelte-scrollto';
 	import Logo from '$lib/components/Logo/index.svelte';
 	const menuIcon = assets + 'images/layout/menu.png';
-	const logoIcon = assets + 'images/fav-pack/logo-vertical-b.svg';
+	const logoIconBlack = assets + 'images/fav-pack/logo-vertical-b.svg';
+	const logoIconWhite = assets + 'images/fav-pack/logo-vertical-w.svg';
 	import { main_nav } from '$lib/components/data-mocks/navItems.svelte';
 	const navItems = main_nav.list;
 	const ctaItem = main_nav.cta;
@@ -49,7 +50,8 @@
 				title="FunctionLand"
 				on:click={closeMenuOnClick}
 			>
-				<img src={logoIcon} alt="logo" width="157px" height="35px" style="width:157px;height:35px;" />
+				<img src={logoIconBlack} class="logo-black" alt="logo" width="157px" height="35px" style="width:157px;height:35px;" />
+				<img src={logoIconWhite} class="logo-white" alt="logo" width="157px" height="35px" style="width:157px;height:35px;" />
 			</a>
 			
 			<a href="https://indiegogo.fx.land/" target="_blank" class="btn btn-cta toggle-menu">Pre-Order</a>
