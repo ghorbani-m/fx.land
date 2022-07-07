@@ -48,7 +48,7 @@
 				title="FunctionLand"
 				on:click={closeMenuOnClick}
 			>
-				<Logo type="default" /><img src = "$lib/components/Logo/logo vertical-b.svg" alt="logo" width="157px" height="35px" style="width:157px;height:35px;" />
+				<Logo type="default" />
 			</a>
 			
 			<a href="https://indiegogo.fx.land/" target="_blank" class="btn btn-cta toggle-menu">Pre-Order</a>
