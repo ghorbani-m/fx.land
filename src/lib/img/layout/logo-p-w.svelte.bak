@@ -5,7 +5,7 @@
 	export let height;
 </script>
 
-<svg {width} {height} viewBox="0 0 {width} {height}" class="logo-black-w"
+<svg {width} {height} viewBox="0 0 297.11 195" class="logo-black-w"
 	><rect width="297.11" height="195" fill="none" /><rect
 		x="106.25"
 		y="0.93"
