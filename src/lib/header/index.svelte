@@ -94,8 +94,7 @@
 			opacity: 0;
 		}
 	}
-</style>
-<style>
+
 	.logo-white {
 		opacity: 0;
 		grid-row: 1/-1;
@@ -106,8 +105,7 @@
 			opacity: 1;
 		}
 	}
-</style>
-<style>
+
 	header {
 		position: fixed;
 		z-index: 10;
