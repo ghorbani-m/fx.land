@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "land.fx.fotos",
+      "sha256_cert_fingerprints":
+        
+["A8:BB:C1:74:16:DD:9B:50:D6:25:75:A5:A5:B7:CA:AC:2E:48:14:BE:E6:69:3E:24:2E:BF:8D:E3:3C:BA:54:7B"]
+    }
+  }
+]
